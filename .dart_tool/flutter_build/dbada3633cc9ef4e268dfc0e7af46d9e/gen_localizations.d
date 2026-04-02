@@ -1,0 +1,1 @@
+ E:\\Flutter\\sudoku_v1.0\\lib\\common\\l10n\\app_localizations_en.dart E:\\Flutter\\sudoku_v1.0\\lib\\common\\l10n\\app_localizations_zh.dart E:\\Flutter\\sudoku_v1.0\\lib\\common\\l10n\\app_localizations.dart:  E:\\Flutter\\sudoku_v1.0\\l10n.yaml E:\\Flutter\\sudoku_v1.0\\lib\\common\\l10n\\app_en.arb E:\\Flutter\\sudoku_v1.0\\lib\\common\\l10n\\app_zh.arb

@@ -1,0 +1,131 @@
+import 'package:sudoku/core/index.dart';
+import 'package:sudoku/games/standard/models/standard_board.dart';
+
+class TestFixtures {
+  static final validStandardBoard = StandardBoard(size: 9, cells: [
+    [
+      const Cell(row: 0, col: 0, value: 5, isFixed: true),
+      const Cell(row: 0, col: 1, value: 3, isFixed: true),
+      const Cell(row: 0, col: 2, value: 4, isFixed: true),
+      const Cell(row: 0, col: 3, value: 6, isFixed: true),
+      const Cell(row: 0, col: 4, value: 7, isFixed: true),
+      const Cell(row: 0, col: 5, value: 8, isFixed: true),
+      const Cell(row: 0, col: 6, value: 9, isFixed: true),
+      const Cell(row: 0, col: 7, value: 1, isFixed: true),
+      const Cell(row: 0, col: 8, value: 2, isFixed: true),
+    ],
+    [
+      const Cell(row: 1, col: 0, value: 6, isFixed: true),
+      const Cell(row: 1, col: 1, value: 7, isFixed: true),
+      const Cell(row: 1, col: 2, value: 2, isFixed: true),
+      const Cell(row: 1, col: 3, value: 1, isFixed: true),
+      const Cell(row: 1, col: 4, value: 9, isFixed: true),
+      const Cell(row: 1, col: 5, value: 5, isFixed: true),
+      const Cell(row: 1, col: 6, value: 3, isFixed: true),
+      const Cell(row: 1, col: 7, value: 4, isFixed: true),
+      const Cell(row: 1, col: 8, value: 8, isFixed: true),
+    ],
+    [
+      const Cell(row: 2, col: 0, value: 1, isFixed: true),
+      const Cell(row: 2, col: 1, value: 9, isFixed: true),
+      const Cell(row: 2, col: 2, value: 8, isFixed: true),
+      const Cell(row: 2, col: 3, value: 3, isFixed: true),
+      const Cell(row: 2, col: 4, value: 4, isFixed: true),
+      const Cell(row: 2, col: 5, value: 2, isFixed: true),
+      const Cell(row: 2, col: 6, value: 5, isFixed: true),
+      const Cell(row: 2, col: 7, value: 6, isFixed: true),
+      const Cell(row: 2, col: 8, value: 7, isFixed: true),
+    ],
+    [
+      const Cell(row: 3, col: 0, value: 8, isFixed: true),
+      const Cell(row: 3, col: 1, value: 5, isFixed: true),
+      const Cell(row: 3, col: 2, value: 9, isFixed: true),
+      const Cell(row: 3, col: 3, value: 7, isFixed: true),
+      const Cell(row: 3, col: 4, value: 6, isFixed: true),
+      const Cell(row: 3, col: 5, value: 1, isFixed: true),
+      const Cell(row: 3, col: 6, value: 4, isFixed: true),
+      const Cell(row: 3, col: 7, value: 2, isFixed: true),
+      const Cell(row: 3, col: 8, value: 3, isFixed: true),
+    ],
+    [
+      const Cell(row: 4, col: 0, value: 4, isFixed: true),
+      const Cell(row: 4, col: 1, value: 2, isFixed: true),
+      const Cell(row: 4, col: 2, value: 6, isFixed: true),
+      const Cell(row: 4, col: 3, value: 8, isFixed: true),
+      const Cell(row: 4, col: 4, value: 5, isFixed: true),
+      const Cell(row: 4, col: 5, value: 3, isFixed: true),
+      const Cell(row: 4, col: 6, value: 7, isFixed: true),
+      const Cell(row: 4, col: 7, value: 9, isFixed: true),
+      const Cell(row: 4, col: 8, value: 1, isFixed: true),
+    ],
+    [
+      const Cell(row: 5, col: 0, value: 7, isFixed: true),
+      const Cell(row: 5, col: 1, value: 1, isFixed: true),
+      const Cell(row: 5, col: 2, value: 3, isFixed: true),
+      const Cell(row: 5, col: 3, value: 9, isFixed: true),
+      const Cell(row: 5, col: 4, value: 2, isFixed: true),
+      const Cell(row: 5, col: 5, value: 4, isFixed: true),
+      const Cell(row: 5, col: 6, value: 8, isFixed: true),
+      const Cell(row: 5, col: 7, value: 5, isFixed: true),
+      const Cell(row: 5, col: 8, value: 6, isFixed: true),
+    ],
+    [
+      const Cell(row: 6, col: 0, value: 9, isFixed: true),
+      const Cell(row: 6, col: 1, value: 6, isFixed: true),
+      const Cell(row: 6, col: 2, value: 1, isFixed: true),
+      const Cell(row: 6, col: 3, value: 5, isFixed: true),
+      const Cell(row: 6, col: 4, value: 3, isFixed: true),
+      const Cell(row: 6, col: 5, value: 7, isFixed: true),
+      const Cell(row: 6, col: 6, value: 2, isFixed: true),
+      const Cell(row: 6, col: 7, value: 8, isFixed: true),
+      const Cell(row: 6, col: 8, value: 4, isFixed: true),
+    ],
+    [
+      const Cell(row: 7, col: 0, value: 2, isFixed: true),
+      const Cell(row: 7, col: 1, value: 8, isFixed: true),
+      const Cell(row: 7, col: 2, value: 7, isFixed: true),
+      const Cell(row: 7, col: 3, value: 4, isFixed: true),
+      const Cell(row: 7, col: 4, value: 1, isFixed: true),
+      const Cell(row: 7, col: 5, value: 9, isFixed: true),
+      const Cell(row: 7, col: 6, value: 6, isFixed: true),
+      const Cell(row: 7, col: 7, value: 3, isFixed: true),
+      const Cell(row: 7, col: 8, value: 5, isFixed: true),
+    ],
+    [
+      const Cell(row: 8, col: 0, value: 3, isFixed: true),
+      const Cell(row: 8, col: 1, value: 4, isFixed: true),
+      const Cell(row: 8, col: 2, value: 5, isFixed: true),
+      const Cell(row: 8, col: 3, value: 2, isFixed: true),
+      const Cell(row: 8, col: 4, value: 8, isFixed: true),
+      const Cell(row: 8, col: 5, value: 6, isFixed: true),
+      const Cell(row: 8, col: 6, value: 1, isFixed: true),
+      const Cell(row: 8, col: 7, value: 7, isFixed: true),
+      const Cell(row: 8, col: 8, value: 9, isFixed: true),
+    ],
+  ]);
+
+  static final emptyBoard = StandardBoard(size: 9, cells: List.generate(
+    9,
+    (row) => List.generate(9, (col) => Cell(row: row, col: col)),
+  ));
+
+  static final completedGameState = GameState(
+    board: validStandardBoard,
+    initialBoard: validStandardBoard,
+    solution: validStandardBoard,
+    startTime: DateTime.now().subtract(const Duration(minutes: 5)),
+    elapsedTime: 300,
+    difficulty: 'easy',
+    isCompleted: true,
+  );
+
+  static final inProgressGameState = GameState(
+    board: emptyBoard,
+    initialBoard: emptyBoard,
+    solution: validStandardBoard,
+    startTime: DateTime.now().subtract(const Duration(minutes: 2)),
+    elapsedTime: 120,
+    mistakes: 1,
+    difficulty: 'medium',
+  );
+}

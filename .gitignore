@@ -1,0 +1,44 @@
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+
+# Android
+android/.gradle/
+android/build/
+android/local.properties
+android/**/*.iml
+android/**/.idea
+
+# iOS
+ios/Pods/
+ios/build/
+ios/Runner.xcworkspace/
+
+# Windows
+windows/flutter/
+windows/runner/Debug/
+windows/runner/Release/
+
+# macOS
+macos/Pods/
+macos/build/
+
+# Linux
+linux/build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+
+# Worktrees
+.worktrees/
+worktrees/
