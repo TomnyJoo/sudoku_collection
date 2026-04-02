@@ -98,1265 +98,659 @@ abstract class AppLocalizations {
     Locale('zh'),
   ];
 
-  /// Active game types label
+  /// activeGameTypes
   ///
   /// In en, this message translates to:
   /// **'Active Game Types'**
   String get activeGameTypes;
 
-  /// Advanced exclusion logic setting
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced Exclusion Logic'**
-  String get advancedExclusion;
-
-  /// Advanced settings tab
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced Settings'**
-  String get advancedSettings;
-
-  /// App name
+  /// appName
   ///
   /// In en, this message translates to:
   /// **'Sudoku'**
   String get appName;
 
-  /// Auto check setting
-  ///
-  /// In en, this message translates to:
-  /// **'Auto Check'**
-  String get autoCheck;
-
-  /// Auto Mark button
+  /// autoMark
   ///
   /// In en, this message translates to:
   /// **'Auto Mark'**
   String get autoMark;
 
-  /// Auto mark possibilities description
-  ///
-  /// In en, this message translates to:
-  /// **'Auto Mark Possibilities'**
-  String get autoMarkPossibilities;
-
-  /// Auto save setting
-  ///
-  /// In en, this message translates to:
-  /// **'Auto Save'**
-  String get autoSave;
-
-  /// Average mistakes label
+  /// averageMistakes
   ///
   /// In en, this message translates to:
   /// **'Average Mistakes'**
   String get averageMistakes;
 
-  /// Average time label
+  /// averageTime
   ///
   /// In en, this message translates to:
   /// **'Average Time'**
   String get averageTime;
 
-  /// Back to menu button
+  /// backToMenu
   ///
   /// In en, this message translates to:
-  /// **'Back'**
+  /// **'Back to Menu'**
   String get backToMenu;
 
-  /// Basic settings tab
-  ///
-  /// In en, this message translates to:
-  /// **'Basic Settings'**
-  String get basicSettings;
-
-  /// Best score label
+  /// bestScore
   ///
   /// In en, this message translates to:
   /// **'Best Score'**
   String get bestScore;
 
-  /// Best score rule description
-  ///
-  /// In en, this message translates to:
-  /// **'Record rule: shorter time, or same time with fewer mistakes'**
-  String get bestScoreRule;
-
-  /// Best time label
+  /// bestTime
   ///
   /// In en, this message translates to:
   /// **'Best Time'**
   String get bestTime;
 
-  /// Better performance indicator
-  ///
-  /// In en, this message translates to:
-  /// **'Better'**
-  String get better;
-
-  /// Block exclusion logic
-  ///
-  /// In en, this message translates to:
-  /// **'Block Exclusion'**
-  String get blockExclusion;
-
-  /// Cancel button
+  /// cancel
   ///
   /// In en, this message translates to:
   /// **'Cancel'**
   String get cancel;
 
-  /// Clear button
+  /// clear
   ///
   /// In en, this message translates to:
   /// **'Clear'**
   String get clear;
 
-  /// Clear best scores button
+  /// clearAllStatsConfirm
   ///
   /// In en, this message translates to:
-  /// **'Clear Best Scores'**
-  String get clearBestScores;
+  /// **'Are you sure you want to clear all statistics?'**
+  String get clearAllStatsConfirm;
 
-  /// Clear board button
+  /// clearBoard
   ///
   /// In en, this message translates to:
   /// **'Clear Board'**
   String get clearBoard;
 
-  /// Clear board confirmation message
+  /// clearBoardConfirm
   ///
   /// In en, this message translates to:
   /// **'Are you sure you want to clear the board?'**
   String get clearBoardConfirm;
 
-  /// Clear cell description
-  ///
-  /// In en, this message translates to:
-  /// **'Clear Cell'**
-  String get clearCell;
-
-  /// Clear statistics button
+  /// clearStatistics
   ///
   /// In en, this message translates to:
   /// **'Clear Statistics'**
   String get clearStatistics;
 
-  /// Clear statistics confirmation message
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to clear all statistics? This action cannot be undone.'**
-  String get clearStatisticsConfirmMessage;
-
-  /// Clear statistics confirmation title
-  ///
-  /// In en, this message translates to:
-  /// **'Confirm Clear Statistics'**
-  String get clearStatisticsConfirmTitle;
-
-  /// Combined statistics title
-  ///
-  /// In en, this message translates to:
-  /// **'Combined Statistics'**
-  String get combinedStatistics;
-
-  /// Completed
-  ///
-  /// In en, this message translates to:
-  /// **'Completed'**
-  String get completed;
-
-  /// Completed games label
+  /// completedGames
   ///
   /// In en, this message translates to:
   /// **'Completed Games'**
   String get completedGames;
 
-  /// Completion rate label
+  /// completionRate
   ///
   /// In en, this message translates to:
   /// **'Completion Rate'**
   String get completionRate;
 
-  /// Confirm button
+  /// confirm
   ///
   /// In en, this message translates to:
   /// **'Confirm'**
   String get confirm;
 
-  /// Congratulations message
+  /// congratulations
   ///
   /// In en, this message translates to:
   /// **'Congratulations!'**
   String get congratulations;
 
-  /// Current label
-  ///
-  /// In en, this message translates to:
-  /// **'Current'**
-  String get current;
-
-  /// Custom difficulty title
-  ///
-  /// In en, this message translates to:
-  /// **'Custom Difficulty'**
-  String get customDifficulty;
-
-  /// Custom game title
-  ///
-  /// In en, this message translates to:
-  /// **'Custom Game'**
-  String get customGame;
-
-  /// Error title
-  ///
-  /// In en, this message translates to:
-  /// **'Error'**
-  String get customGameError;
-
-  /// Error message when board is invalid
-  ///
-  /// In en, this message translates to:
-  /// **'Invalid board: some numbers conflict with each other.'**
-  String get customGameErrorInvalid;
-
-  /// Error message when board has multiple solutions
-  ///
-  /// In en, this message translates to:
-  /// **'This board has multiple solutions. Please add more numbers.'**
-  String get customGameErrorMultipleSolutions;
-
-  /// Error message when too few cells are filled
-  ///
-  /// In en, this message translates to:
-  /// **'Please fill at least 17 cells.'**
-  String get customGameErrorTooFew;
-
-  /// Custom game instruction 1
-  ///
-  /// In en, this message translates to:
-  /// **'Tap a cell to select it'**
-  String get customGameInstruction1;
-
-  /// Custom game instruction 2
-  ///
-  /// In en, this message translates to:
-  /// **'Use the number pad to fill in numbers'**
-  String get customGameInstruction2;
-
-  /// Custom game instruction 3
-  ///
-  /// In en, this message translates to:
-  /// **'Tap the same number to delete it'**
-  String get customGameInstruction3;
-
-  /// Custom game instruction 4
-  ///
-  /// In en, this message translates to:
-  /// **'Tap \"Start Game\" when finished'**
-  String get customGameInstruction4;
-
-  /// Custom game instructions title
-  ///
-  /// In en, this message translates to:
-  /// **'Custom Game Instructions'**
-  String get customGameInstructions;
-
-  /// Dark mode setting
-  ///
-  /// In en, this message translates to:
-  /// **'Dark Mode'**
-  String get darkMode;
-
-  /// Days ago
-  ///
-  /// In en, this message translates to:
-  /// **'days ago'**
-  String get daysAgo;
-
-  /// Difficulty label
-  ///
-  /// In en, this message translates to:
-  /// **'Difficulty'**
-  String get difficulty;
-
-  /// Beginner difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Beginner'**
-  String get difficultyBeginner;
-
-  /// Custom difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Custom'**
-  String get difficultyCustom;
-
-  /// Difficulty distribution section title
-  ///
-  /// In en, this message translates to:
-  /// **'Difficulty Distribution'**
-  String get difficultyDistribution;
-
-  /// Easy difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Easy'**
-  String get difficultyEasy;
-
-  /// Expert difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Expert'**
-  String get difficultyExpert;
-
-  /// Hard difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Hard'**
-  String get difficultyHard;
-
-  /// Master difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Master'**
-  String get difficultyMaster;
-
-  /// Medium difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Medium'**
-  String get difficultyMedium;
-
-  /// Difficulty performance title
-  ///
-  /// In en, this message translates to:
-  /// **'Difficulty Performance'**
-  String get difficultyPerformance;
-
-  /// Difficulty statistics section title
-  ///
-  /// In en, this message translates to:
-  /// **'Difficulty Statistics'**
-  String get difficultyStatistics;
-
-  /// Efficient label (short)
-  ///
-  /// In en, this message translates to:
-  /// **'Efficient'**
-  String get efficient;
-
-  /// Efficient mode description
-  ///
-  /// In en, this message translates to:
-  /// **'Efficient Mode: Uses preset templates for fast generation with stable quality'**
-  String get efficientModeDescription;
-
-  /// Equal games played message
-  ///
-  /// In en, this message translates to:
-  /// **'Both games played equally'**
-  String get equalGamesPlayed;
-
-  /// Erase button
-  ///
-  /// In en, this message translates to:
-  /// **'Erase'**
-  String get erase;
-
-  /// Error title
-  ///
-  /// In en, this message translates to:
-  /// **'Error'**
-  String get error;
-
-  /// Export statistics failed message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to export statistics'**
-  String get exportFailed;
-
-  /// Export statistics button
-  ///
-  /// In en, this message translates to:
-  /// **'Export Statistics'**
-  String get exportStatistics;
-
-  /// Game comparison title
-  ///
-  /// In en, this message translates to:
-  /// **'Game Comparison'**
-  String get gameComparison;
-
-  /// Game completion rate
-  ///
-  /// In en, this message translates to:
-  /// **'Game Completion Rate'**
-  String get gameCompletionRate;
-
-  /// Display difficulty level
-  ///
-  /// In en, this message translates to:
-  /// **'Difficulty: {level}'**
-  String gameDifficulty(Object level);
-
-  /// Display mistake count
-  ///
-  /// In en, this message translates to:
-  /// **'Mistakes: {count}'**
-  String gameMistakes(Object count);
-
-  /// Game rules dialog title
-  ///
-  /// In en, this message translates to:
-  /// **'Game Rules'**
-  String get gameRules;
-
-  /// Game settings section header
-  ///
-  /// In en, this message translates to:
-  /// **'Game Settings'**
-  String get gameSettings;
-
-  /// Display game time
-  ///
-  /// In en, this message translates to:
-  /// **'Time: {time}'**
-  String gameTime(Object time);
-
-  /// Game trends title
-  ///
-  /// In en, this message translates to:
-  /// **'Game Trends'**
-  String get gameTrends;
-
-  /// Custom Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'A fully customizable Sudoku game where you can set any rules and regions'**
-  String get gameTypeCustomDescription;
-
-  /// Custom Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Custom Sudoku'**
-  String get gameTypeCustomName;
-
-  /// Diagonal Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'In addition to standard rules, numbers on both main diagonals cannot repeat'**
-  String get gameTypeDiagonalDescription;
-
-  /// Diagonal Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Diagonal Sudoku'**
-  String get gameTypeDiagonalName;
-
-  /// Jigsaw Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'A Sudoku game with irregular regions where numbers cannot repeat within each region'**
-  String get gameTypeJigsawDescription;
-
-  /// Jigsaw Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Jigsaw Sudoku'**
-  String get gameTypeJigsawName;
-
-  /// Killer Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'Contains numbers and regions, where the sum of numbers in each region must equal the specified value'**
-  String get gameTypeKillerDescription;
-
-  /// Killer Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Killer Sudoku'**
-  String get gameTypeKillerName;
-
-  /// Samurai Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'A complex Sudoku game composed of five standard Sudoku puzzles intersecting'**
-  String get gameTypeSamuraiDescription;
-
-  /// Samurai Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Samurai Sudoku'**
-  String get gameTypeSamuraiName;
-
-  /// Standard Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'Classic 9x9 Sudoku game where each row, column, and 3x3 block must contain digits 1-9 without repetition'**
-  String get gameTypeStandardDescription;
-
-  /// Standard Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Standard Sudoku'**
-  String get gameTypeStandardName;
-
-  /// Window Sudoku game type description
-  ///
-  /// In en, this message translates to:
-  /// **'A Sudoku game with four 3x3 window regions where numbers cannot repeat within window regions'**
-  String get gameTypeWindowDescription;
-
-  /// Window Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Window Sudoku'**
-  String get gameTypeWindowName;
-
-  /// Generating game message
-  ///
-  /// In en, this message translates to:
-  /// **'Generating game, please wait...'**
-  String get generatingGame;
-
-  /// Generation failed error
-  ///
-  /// In en, this message translates to:
-  /// **'Error: {error}'**
-  String generationFailedError(Object error);
-
-  /// Generation failed message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to generate game. Please try again.'**
-  String get generationFailedMessage;
-
-  /// Generation failed title
-  ///
-  /// In en, this message translates to:
-  /// **'Generation Failed'**
-  String get generationFailedTitle;
-
-  /// Generator label (short)
-  ///
-  /// In en, this message translates to:
-  /// **'Generator'**
-  String get generator;
-
-  /// Get hint description
-  ///
-  /// In en, this message translates to:
-  /// **'Get Hint'**
-  String get getHint;
-
-  /// Help button
-  ///
-  /// In en, this message translates to:
-  /// **'Help'**
-  String get help;
-
-  /// Hint button
-  ///
-  /// In en, this message translates to:
-  /// **'Hint'**
-  String get hint;
-
-  /// Hidden pairs/triples exclusion logic
-  ///
-  /// In en, this message translates to:
-  /// **'Hidden Pairs/Triples'**
-  String get hiddenPairsTriples;
-
-  /// Hidden singles exclusion logic
-  ///
-  /// In en, this message translates to:
-  /// **'Hidden Singles'**
-  String get hiddenSingles;
-
-  /// Highlight mistakes setting
-  ///
-  /// In en, this message translates to:
-  /// **'Highlight Mistakes'**
-  String get highlightMistakes;
-
-  /// Home button
-  ///
-  /// In en, this message translates to:
-  /// **'Home'**
-  String get home;
-
-  /// Home screen title
-  ///
-  /// In en, this message translates to:
-  /// **'Sudoku Game'**
-  String get homeTitle;
-
-  /// Home version label
-  ///
-  /// In en, this message translates to:
-  /// **'Version {version}'**
-  String homeVersion(Object version);
-
-  /// Hours ago
-  ///
-  /// In en, this message translates to:
-  /// **'hours ago'**
-  String get hoursAgo;
-
-  /// Hybrid label (short)
-  ///
-  /// In en, this message translates to:
-  /// **'Hybrid'**
-  String get hybrid;
-
-  /// Hybrid mode description
-  ///
-  /// In en, this message translates to:
-  /// **'Hybrid Mode: Uses preset region templates with random answers for balanced performance'**
-  String get hybridModeDescription;
-
-  /// Jigsaw Sudoku custom game not supported message
-  ///
-  /// In en, this message translates to:
-  /// **'Jigsaw Sudoku does not support custom games yet'**
-  String get jigsawCustomNotSupported;
-
-  /// Load game button
-  ///
-  /// In en, this message translates to:
-  /// **'Load Game'**
-  String get loadGame;
-
-  /// Delete saved game button
-  ///
-  /// In en, this message translates to:
-  /// **'Delete Saved Game'**
-  String get deleteSavedGame;
-
-  /// Delete saved game confirmation message
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to delete this saved game?'**
-  String get deleteSavedGameConfirm;
-
-  /// Delete button
-  ///
-  /// In en, this message translates to:
-  /// **'Delete'**
-  String get delete;
-
-  /// Mark button
-  ///
-  /// In en, this message translates to:
-  /// **'Mark'**
-  String get mark;
-
-  /// Mark cells description
-  ///
-  /// In en, this message translates to:
-  /// **'Mark Cells'**
-  String get markCells;
-
-  /// Minutes ago
-  ///
-  /// In en, this message translates to:
-  /// **'minutes ago'**
-  String get minutesAgo;
-
-  /// Mistakes label
-  ///
-  /// In en, this message translates to:
-  /// **'Mistakes'**
-  String get mistakes;
-
-  /// Music setting
-  ///
-  /// In en, this message translates to:
-  /// **'Music'**
-  String get music;
-
-  /// Naked pairs/triples exclusion logic
-  ///
-  /// In en, this message translates to:
-  /// **'Naked Pairs/Triples'**
-  String get nakedPairsTriples;
-
-  /// New game button
-  ///
-  /// In en, this message translates to:
-  /// **'New Game'**
-  String get newGame;
-
-  /// Confirmation dialog for new game
-  ///
-  /// In en, this message translates to:
-  /// **'Start New Game?'**
-  String get newGameConfirm;
-
-  /// Confirmation dialog content for new game
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to start a new game? Current progress will be lost.'**
-  String get newGameConfirmContent;
-
-  /// New record title
-  ///
-  /// In en, this message translates to:
-  /// **'New Record!'**
-  String get newRecord;
-
-  /// New record message
-  ///
-  /// In en, this message translates to:
-  /// **'Congratulations! You\'ve set a new best record!'**
-  String get newRecordMessage;
-
-  /// No games played message
-  ///
-  /// In en, this message translates to:
-  /// **'No games played yet'**
-  String get noGamesPlayed;
-
-  /// Message when no saved game is found
-  ///
-  /// In en, this message translates to:
-  /// **'No saved game found.'**
-  String get noSavedGame;
-
-  /// No statistics message
-  ///
-  /// In en, this message translates to:
-  /// **'No statistics available'**
-  String get noStatistics;
-
-  /// Not completed
-  ///
-  /// In en, this message translates to:
-  /// **'Not Completed'**
-  String get notCompleted;
-
-  /// OK button
-  ///
-  /// In en, this message translates to:
-  /// **'OK'**
-  String get ok;
-
-  /// OK button
-  ///
-  /// In en, this message translates to:
-  /// **'OK'**
-  String get okButton;
-
-  /// Overview section title
-  ///
-  /// In en, this message translates to:
-  /// **'Overview'**
-  String get overview;
-
-  /// Played more games
-  ///
-  /// In en, this message translates to:
-  /// **' played more'**
-  String get playedMore;
-
-  /// Please wait message
-  ///
-  /// In en, this message translates to:
-  /// **'Please Wait'**
-  String get pleaseWait;
-
-  /// Puzzle completed message
-  ///
-  /// In en, this message translates to:
-  /// **'Puzzle Completed!'**
-  String get puzzleCompleted;
-
-  /// Random label (short)
-  ///
-  /// In en, this message translates to:
-  /// **'Random'**
-  String get random;
-
-  /// Random mode description
-  ///
-  /// In en, this message translates to:
-  /// **'Random Mode: Uses backtracking algorithm for random generation, different every time'**
-  String get randomModeDescription;
-
-  /// Recent games section title
-  ///
-  /// In en, this message translates to:
-  /// **'Recent Games'**
-  String get recentGames;
-
-  /// Redo button
-  ///
-  /// In en, this message translates to:
-  /// **'Redo'**
-  String get redo;
-
-  /// Region numbers toggle label
-  ///
-  /// In en, this message translates to:
-  /// **'Region Numbers'**
-  String get regionNumbers;
-
-  /// Reset button
-  ///
-  /// In en, this message translates to:
-  /// **'Reset'**
-  String get reset;
-
-  /// Reset game description
-  ///
-  /// In en, this message translates to:
-  /// **'Reset Game'**
-  String get resetGame;
-
-  /// Retry button
-  ///
-  /// In en, this message translates to:
-  /// **'Retry'**
-  String get retry;
-
-  /// Save button
-  ///
-  /// In en, this message translates to:
-  /// **'Save'**
-  String get save;
-
-  /// Select difficulty title
-  ///
-  /// In en, this message translates to:
-  /// **'Select Difficulty'**
-  String get selectDifficulty;
-
-  /// Select Sudoku type title
-  ///
-  /// In en, this message translates to:
-  /// **'Select Sudoku Type'**
-  String get selectSudokuType;
-
-  /// Hint for selecting Sudoku type
-  ///
-  /// In en, this message translates to:
-  /// **'Please select a Sudoku type'**
-  String get selectSudokuTypeHint;
-
-  /// Settings button
-  ///
-  /// In en, this message translates to:
-  /// **'Settings'**
-  String get settings;
-
-  /// Audio setting
-  ///
-  /// In en, this message translates to:
-  /// **'Audio'**
-  String get settingsAudio;
-
-  /// Auto check setting
-  ///
-  /// In en, this message translates to:
-  /// **'Auto Check'**
-  String get settingsAutoCheck;
-
-  /// Basic settings tab
-  ///
-  /// In en, this message translates to:
-  /// **'Basic Settings'**
-  String get settingsBasicSettings;
-
-  /// Advanced strategies setting
-  ///
-  /// In en, this message translates to:
-  /// **'Advanced Strategies'**
-  String get settingsAdvancedStrategies;
-
-  /// Game settings
-  ///
-  /// In en, this message translates to:
-  /// **'General Settings'**
-  String get settingsGameSettings;
-
-  /// Game settings tab
-  ///
-  /// In en, this message translates to:
-  /// **'Game Settings'**
-  String get settingsGameSettingsTab;
-
-  /// Hidden pairs/triples setting
-  ///
-  /// In en, this message translates to:
-  /// **'Hidden Pairs/Triples'**
-  String get settingsHiddenPairsTriples;
-
-  /// Hidden singles setting
-  ///
-  /// In en, this message translates to:
-  /// **'Hidden Singles'**
-  String get settingsHiddenSingles;
-
-  /// Highlight mistakes setting
-  ///
-  /// In en, this message translates to:
-  /// **'Highlight Mistakes'**
-  String get settingsHighlightMistakes;
-
-  /// Language setting
-  ///
-  /// In en, this message translates to:
-  /// **'Language'**
-  String get settingsLanguage;
-
-  /// Music setting
-  ///
-  /// In en, this message translates to:
-  /// **'Music'**
-  String get settingsMusic;
-
-  /// Naked pairs/triples setting
-  ///
-  /// In en, this message translates to:
-  /// **'Naked Pairs/Triples'**
-  String get settingsNakedPairsTriples;
-
-  /// Candidate settings
-  ///
-  /// In en, this message translates to:
-  /// **'Candidate Settings'**
-  String get settingsCandidateSettings;
-
-  /// Display mode
-  ///
-  /// In en, this message translates to:
-  /// **'Display Mode'**
-  String get settingsDisplayMode;
-
-  /// Direct fill display mode
-  ///
-  /// In en, this message translates to:
-  /// **'Direct Fill'**
-  String get settingsDisplayModeDirect;
-
-  /// Bubble hint display mode
-  ///
-  /// In en, this message translates to:
-  /// **'Bubble Hint'**
-  String get settingsDisplayModeBubble;
-
-  /// Dialog hint display mode
-  ///
-  /// In en, this message translates to:
-  /// **'Dialog Hint'**
-  String get settingsDisplayModeDialog;
-
-  /// Hint settings
-  ///
-  /// In en, this message translates to:
-  /// **'Hint Settings'**
-  String get settingsHintSettings;
-
-  /// Hint mode
-  ///
-  /// In en, this message translates to:
-  /// **'Hint Mode'**
-  String get settingsHintMode;
-
-  /// Direct fill hint mode
-  ///
-  /// In en, this message translates to:
-  /// **'Direct Fill'**
-  String get settingsHintModeDirect;
-
-  /// Strategy hint mode
-  ///
-  /// In en, this message translates to:
-  /// **'Strategy Hint'**
-  String get settingsHintModeStrategy;
-
-  /// Learning hint mode
-  ///
-  /// In en, this message translates to:
-  /// **'Learning Mode'**
-  String get settingsHintModeLearning;
-
-  /// Detailed hint mode
-  ///
-  /// In en, this message translates to:
-  /// **'Detailed Guide'**
-  String get settingsHintModeDetailed;
-
-  /// Complete reasoning hint mode
-  ///
-  /// In en, this message translates to:
-  /// **'Complete Reasoning'**
-  String get settingsHintModeCompleteReasoning;
-
-  /// Use advanced strategy
-  ///
-  /// In en, this message translates to:
-  /// **'Use Advanced Strategy'**
-  String get settingsUseAdvancedStrategy;
-
-  /// Swordfish setting
-  ///
-  /// In en, this message translates to:
-  /// **'Swordfish'**
-  String get settingsSwordfish;
-
-  /// Theme setting
-  ///
-  /// In en, this message translates to:
-  /// **'Theme'**
-  String get settingsTheme;
-
-  /// Dark theme
-  ///
-  /// In en, this message translates to:
-  /// **'Dark'**
-  String get settingsThemeDark;
-
-  /// Light theme
-  ///
-  /// In en, this message translates to:
-  /// **'Light'**
-  String get settingsThemeLight;
-
-  /// Settings title
-  ///
-  /// In en, this message translates to:
-  /// **'Settings'**
-  String get settingsTitle;
-
-  /// X-Wing setting
-  ///
-  /// In en, this message translates to:
-  /// **'X-Wing'**
-  String get settingsXWing;
-
-  /// Show diagonal lines toggle label
-  ///
-  /// In en, this message translates to:
-  /// **'Show Diagonal Lines'**
-  String get showDiagonalLines;
-
-  /// Show solution description
-  ///
-  /// In en, this message translates to:
-  /// **'Show Solution'**
-  String get showSolution;
-
-  /// Solution button
-  ///
-  /// In en, this message translates to:
-  /// **'Solution'**
-  String get solution;
-
-  /// Sound effects setting
-  ///
-  /// In en, this message translates to:
-  /// **'Sound Effects'**
-  String get soundEffects;
-
-  /// Start game button
-  ///
-  /// In en, this message translates to:
-  /// **'Start Game'**
-  String get startGame;
-
-  /// Start new game description
-  ///
-  /// In en, this message translates to:
-  /// **'New Game'**
-  String get startNewGame;
-
-  /// Statistics exported message
-  ///
-  /// In en, this message translates to:
-  /// **'Statistics exported'**
-  String get statisticsExported;
-
-  /// Statistics screen title
-  ///
-  /// In en, this message translates to:
-  /// **'Game Statistics'**
-  String get statisticsTitle;
-
-  /// Summary label
-  ///
-  /// In en, this message translates to:
-  /// **'Summary'**
-  String get summary;
-
-  /// Sudoku rules title
-  ///
-  /// In en, this message translates to:
-  /// **'Sudoku Rules'**
-  String get sudokuRules;
-
-  /// Swordfish exclusion logic
-  ///
-  /// In en, this message translates to:
-  /// **'Swordfish'**
-  String get swordfish;
-
-  /// Time label
-  ///
-  /// In en, this message translates to:
-  /// **'Time'**
-  String get time;
-
-  /// Total games label
-  ///
-  /// In en, this message translates to:
-  /// **'Total Games'**
-  String get totalGames;
-
-  /// Undo button
-  ///
-  /// In en, this message translates to:
-  /// **'Undo'**
-  String get undo;
-
-  /// Undo/Redo operation description
-  ///
-  /// In en, this message translates to:
-  /// **'Undo/Redo Operation'**
-  String get undoRedoOperation;
-
-  /// Weekly summary title
-  ///
-  /// In en, this message translates to:
-  /// **'Weekly Summary'**
-  String get weeklySummary;
-
-  /// X-Wing exclusion logic
-  ///
-  /// In en, this message translates to:
-  /// **'X-Wing'**
-  String get xWing;
-
-  /// Yesterday
-  ///
-  /// In en, this message translates to:
-  /// **'Yesterday'**
-  String get yesterday;
-
-  /// Home screen copyright information
-  ///
-  /// In en, this message translates to:
-  /// **'© 2026 Topking Software'**
-  String get homeCopyright;
-
-  /// Loading message
-  ///
-  /// In en, this message translates to:
-  /// **'Loading...'**
-  String get loading;
-
-  /// Processing message
-  ///
-  /// In en, this message translates to:
-  /// **'Processing...'**
-  String get processing;
-
-  /// Operation success message
-  ///
-  /// In en, this message translates to:
-  /// **'Operation Successful'**
-  String get operationSuccess;
-
-  /// Operation failed message
-  ///
-  /// In en, this message translates to:
-  /// **'Operation Failed'**
-  String get operationFailed;
-
-  /// Clear all statistics confirmation message
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to clear all game statistics? This action cannot be undone.'**
-  String get clearAllStatsConfirm;
-
-  /// Statistics cleared message
-  ///
-  /// In en, this message translates to:
-  /// **'All statistics have been cleared'**
-  String get statsCleared;
-
-  /// Individual game statistics section title
-  ///
-  /// In en, this message translates to:
-  /// **'Individual Game Statistics'**
-  String get individualGameStats;
-
-  /// Incomplete games section title
-  ///
-  /// In en, this message translates to:
-  /// **'Incomplete Games'**
-  String get incompleteGames;
-
-  /// Consecutive days label
+  /// consecutiveDays
   ///
   /// In en, this message translates to:
   /// **'Consecutive Days'**
   String get consecutiveDays;
 
-  /// Longest streak label
+  /// current
   ///
   /// In en, this message translates to:
-  /// **'Longest Streak'**
-  String get longestStreak;
+  /// **'Current'**
+  String get current;
 
-  /// No numbers message
+  /// customGame
   ///
   /// In en, this message translates to:
-  /// **'No Numbers'**
-  String get noNumbers;
+  /// **'Custom Game'**
+  String get customGame;
 
-  /// Close button
+  /// customGameError
   ///
   /// In en, this message translates to:
-  /// **'Close'**
-  String get close;
+  /// **'Error creating custom game'**
+  String get customGameError;
 
-  /// Apply button
+  /// customGameErrorInvalid
   ///
   /// In en, this message translates to:
-  /// **'Apply'**
-  String get apply;
+  /// **'Invalid Sudoku. Please check your input.'**
+  String get customGameErrorInvalid;
 
-  /// Custom Sudoku title
+  /// customGameErrorMultipleSolutions
+  ///
+  /// In en, this message translates to:
+  /// **'This Sudoku has multiple solutions.'**
+  String get customGameErrorMultipleSolutions;
+
+  /// customGameErrorTooFew
+  ///
+  /// In en, this message translates to:
+  /// **'Too few numbers entered. Please add more.'**
+  String get customGameErrorTooFew;
+
+  /// customGameInstruction1
+  ///
+  /// In en, this message translates to:
+  /// **'Enter numbers from 1-9 in the grid.'**
+  String get customGameInstruction1;
+
+  /// customGameInstruction2
+  ///
+  /// In en, this message translates to:
+  /// **'Leave empty cells for the puzzle to solve.'**
+  String get customGameInstruction2;
+
+  /// customSudoku
   ///
   /// In en, this message translates to:
   /// **'Custom Sudoku'**
   String get customSudoku;
 
-  /// Custom Sudoku game title
+  /// difficulty
   ///
   /// In en, this message translates to:
-  /// **'Custom Sudoku Game'**
-  String get customSudokuGame;
+  /// **'Difficulty'**
+  String get difficulty;
 
-  /// Hint message for cell value
+  /// difficultyBeginner
   ///
   /// In en, this message translates to:
-  /// **'Row {row}, Column {col} should contain {value}'**
-  String cellShouldContain(Object row, Object col, Object value);
+  /// **'Beginner'**
+  String get difficultyBeginner;
 
-  /// Row label
+  /// difficultyCustom
   ///
   /// In en, this message translates to:
-  /// **'Row'**
-  String get row;
+  /// **'Custom'**
+  String get difficultyCustom;
 
-  /// Column label
+  /// difficultyEasy
   ///
   /// In en, this message translates to:
-  /// **'Column'**
-  String get col;
+  /// **'Easy'**
+  String get difficultyEasy;
+
+  /// difficultyExpert
+  ///
+  /// In en, this message translates to:
+  /// **'Expert'**
+  String get difficultyExpert;
+
+  /// difficultyHard
+  ///
+  /// In en, this message translates to:
+  /// **'Hard'**
+  String get difficultyHard;
+
+  /// difficultyMaster
+  ///
+  /// In en, this message translates to:
+  /// **'Master'**
+  String get difficultyMaster;
+
+  /// difficultyMedium
+  ///
+  /// In en, this message translates to:
+  /// **'Medium'**
+  String get difficultyMedium;
+
+  /// erase
+  ///
+  /// In en, this message translates to:
+  /// **'Erase'**
+  String get erase;
+
+  /// error
+  ///
+  /// In en, this message translates to:
+  /// **'Error'**
+  String get error;
+
+  /// exportStatistics
+  ///
+  /// In en, this message translates to:
+  /// **'Export Statistics'**
+  String get exportStatistics;
+
+  /// gameComparison
+  ///
+  /// In en, this message translates to:
+  /// **'Game Comparison'**
+  String get gameComparison;
+
+  /// gameRules
+  ///
+  /// In en, this message translates to:
+  /// **'Game Rules'**
+  String get gameRules;
+
+  /// gameTypeDiagonalDescription
+  ///
+  /// In en, this message translates to:
+  /// **'In addition to standard rules, numbers on both main diagonals cannot repeat'**
+  String get gameTypeDiagonalDescription;
+
+  /// gameTypeDiagonalName
+  ///
+  /// In en, this message translates to:
+  /// **'Diagonal Sudoku'**
+  String get gameTypeDiagonalName;
+
+  /// gameTypeJigsawDescription
+  ///
+  /// In en, this message translates to:
+  /// **'A Sudoku game with irregular regions where numbers cannot repeat within each region'**
+  String get gameTypeJigsawDescription;
+
+  /// gameTypeJigsawName
+  ///
+  /// In en, this message translates to:
+  /// **'Jigsaw Sudoku'**
+  String get gameTypeJigsawName;
+
+  /// gameTypeKillerDescription
+  ///
+  /// In en, this message translates to:
+  /// **'Contains numbers and regions, where the sum of numbers in each region must equal the specified value'**
+  String get gameTypeKillerDescription;
+
+  /// gameTypeKillerName
+  ///
+  /// In en, this message translates to:
+  /// **'Killer Sudoku'**
+  String get gameTypeKillerName;
+
+  /// gameTypeSamuraiDescription
+  ///
+  /// In en, this message translates to:
+  /// **'A complex Sudoku game composed of five standard Sudoku puzzles intersecting'**
+  String get gameTypeSamuraiDescription;
+
+  /// gameTypeSamuraiName
+  ///
+  /// In en, this message translates to:
+  /// **'Samurai Sudoku'**
+  String get gameTypeSamuraiName;
+
+  /// gameTypeStandardDescription
+  ///
+  /// In en, this message translates to:
+  /// **'Classic 9x9 Sudoku game where each row, column, and 3x3 block must contain digits 1-9 without repetition'**
+  String get gameTypeStandardDescription;
+
+  /// gameTypeStandardName
+  ///
+  /// In en, this message translates to:
+  /// **'Standard Sudoku'**
+  String get gameTypeStandardName;
+
+  /// gameTypeWindowDescription
+  ///
+  /// In en, this message translates to:
+  /// **'A Sudoku game with four 3x3 window regions where numbers cannot repeat within window regions'**
+  String get gameTypeWindowDescription;
+
+  /// gameTypeWindowName
+  ///
+  /// In en, this message translates to:
+  /// **'Window Sudoku'**
+  String get gameTypeWindowName;
+
+  /// generatingGame
+  ///
+  /// In en, this message translates to:
+  /// **'Generating game, please wait...'**
+  String get generatingGame;
+
+  /// generationFailedError
+  ///
+  /// In en, this message translates to:
+  /// **'Error: {error}'**
+  String generationFailedError(Object error);
+
+  /// generationFailedMessage
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to generate game. Please try again.'**
+  String get generationFailedMessage;
+
+  /// generationFailedTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Generation Failed'**
+  String get generationFailedTitle;
+
+  /// hint
+  ///
+  /// In en, this message translates to:
+  /// **'Hint'**
+  String get hint;
+
+  /// homeCopyright
+  ///
+  /// In en, this message translates to:
+  /// **'© 2026 Topking Software'**
+  String get homeCopyright;
+
+  /// homeVersion
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version}'**
+  String homeVersion(Object version);
+
+  /// incompleteGames
+  ///
+  /// In en, this message translates to:
+  /// **'Incomplete Games'**
+  String get incompleteGames;
+
+  /// individualGameStats
+  ///
+  /// In en, this message translates to:
+  /// **'Individual Game Stats'**
+  String get individualGameStats;
+
+  /// loadGame
+  ///
+  /// In en, this message translates to:
+  /// **'Load Game'**
+  String get loadGame;
+
+  /// loading
+  ///
+  /// In en, this message translates to:
+  /// **'Loading...'**
+  String get loading;
+
+  /// longestStreak
+  ///
+  /// In en, this message translates to:
+  /// **'Longest Streak'**
+  String get longestStreak;
+
+  /// mark
+  ///
+  /// In en, this message translates to:
+  /// **'Mark'**
+  String get mark;
+
+  /// mistakes
+  ///
+  /// In en, this message translates to:
+  /// **'Mistakes'**
+  String get mistakes;
+
+  /// newGame
+  ///
+  /// In en, this message translates to:
+  /// **'New Game'**
+  String get newGame;
+
+  /// newGameConfirm
+  ///
+  /// In en, this message translates to:
+  /// **'Start New Game?'**
+  String get newGameConfirm;
+
+  /// newGameConfirmContent
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to start a new game? Current progress will be lost.'**
+  String get newGameConfirmContent;
+
+  /// newRecord
+  ///
+  /// In en, this message translates to:
+  /// **'New Record!'**
+  String get newRecord;
+
+  /// newRecordMessage
+  ///
+  /// In en, this message translates to:
+  /// **'You have set a new record!'**
+  String get newRecordMessage;
+
+  /// noStatistics
+  ///
+  /// In en, this message translates to:
+  /// **'No statistics available'**
+  String get noStatistics;
+
+  /// ok
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get ok;
+
+  /// okButton
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get okButton;
+
+  /// operationFailed
+  ///
+  /// In en, this message translates to:
+  /// **'Operation Failed'**
+  String get operationFailed;
+
+  /// operationSuccess
+  ///
+  /// In en, this message translates to:
+  /// **'Operation Successful'**
+  String get operationSuccess;
+
+  /// overview
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get overview;
+
+  /// processing
+  ///
+  /// In en, this message translates to:
+  /// **'Processing...'**
+  String get processing;
+
+  /// puzzleCompleted
+  ///
+  /// In en, this message translates to:
+  /// **'Puzzle Completed'**
+  String get puzzleCompleted;
+
+  /// redo
+  ///
+  /// In en, this message translates to:
+  /// **'Redo'**
+  String get redo;
+
+  /// reset
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get reset;
+
+  /// selectDifficulty
+  ///
+  /// In en, this message translates to:
+  /// **'Select Difficulty'**
+  String get selectDifficulty;
+
+  /// selectSudokuType
+  ///
+  /// In en, this message translates to:
+  /// **'Select Sudoku Type'**
+  String get selectSudokuType;
+
+  /// selectSudokuTypeHint
+  ///
+  /// In en, this message translates to:
+  /// **'Please select a Sudoku type'**
+  String get selectSudokuTypeHint;
+
+  /// settingsAudio
+  ///
+  /// In en, this message translates to:
+  /// **'Audio'**
+  String get settingsAudio;
+
+  /// settingsAutoCheck
+  ///
+  /// In en, this message translates to:
+  /// **'Auto Check'**
+  String get settingsAutoCheck;
+
+  /// settingsBasicSettings
+  ///
+  /// In en, this message translates to:
+  /// **'Basic Settings'**
+  String get settingsBasicSettings;
+
+  /// settingsCandidateSettings
+  ///
+  /// In en, this message translates to:
+  /// **'Candidate Settings'**
+  String get settingsCandidateSettings;
+
+  /// settingsGameSettings
+  ///
+  /// In en, this message translates to:
+  /// **'Game Settings'**
+  String get settingsGameSettings;
+
+  /// settingsGameSettingsTab
+  ///
+  /// In en, this message translates to:
+  /// **'Game Settings'**
+  String get settingsGameSettingsTab;
+
+  /// settingsHighlightMistakes
+  ///
+  /// In en, this message translates to:
+  /// **'Highlight Mistakes'**
+  String get settingsHighlightMistakes;
+
+  /// settingsLanguage
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get settingsLanguage;
+
+  /// settingsMusic
+  ///
+  /// In en, this message translates to:
+  /// **'Music'**
+  String get settingsMusic;
+
+  /// settingsTheme
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get settingsTheme;
+
+  /// settingsThemeDark
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get settingsThemeDark;
+
+  /// settingsThemeLight
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get settingsThemeLight;
+
+  /// settingsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settingsTitle;
+
+  /// settingsUseAdvancedStrategy
+  ///
+  /// In en, this message translates to:
+  /// **'Use Advanced Strategy'**
+  String get settingsUseAdvancedStrategy;
+
+  /// solution
+  ///
+  /// In en, this message translates to:
+  /// **'Solution'**
+  String get solution;
+
+  /// soundEffects
+  ///
+  /// In en, this message translates to:
+  /// **'Sound Effects'**
+  String get soundEffects;
+
+  /// startNewGame
+  ///
+  /// In en, this message translates to:
+  /// **'Start New Game'**
+  String get startNewGame;
+
+  /// statisticsExported
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics exported successfully'**
+  String get statisticsExported;
+
+  /// statisticsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics'**
+  String get statisticsTitle;
+
+  /// statsCleared
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics cleared successfully'**
+  String get statsCleared;
+
+  /// summary
+  ///
+  /// In en, this message translates to:
+  /// **'Summary'**
+  String get summary;
+
+  /// time
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get time;
+
+  /// totalGames
+  ///
+  /// In en, this message translates to:
+  /// **'Total Games'**
+  String get totalGames;
+
+  /// undo
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get undo;
 }
 
 class _AppLocalizationsDelegate

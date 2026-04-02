@@ -12,25 +12,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get activeGameTypes => 'Active Game Types';
 
   @override
-  String get advancedExclusion => 'Advanced Exclusion Logic';
-
-  @override
-  String get advancedSettings => 'Advanced Settings';
-
-  @override
   String get appName => 'Sudoku';
 
   @override
-  String get autoCheck => 'Auto Check';
-
-  @override
   String get autoMark => 'Auto Mark';
-
-  @override
-  String get autoMarkPossibilities => 'Auto Mark Possibilities';
-
-  @override
-  String get autoSave => 'Auto Save';
 
   @override
   String get averageMistakes => 'Average Mistakes';
@@ -39,26 +24,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get averageTime => 'Average Time';
 
   @override
-  String get backToMenu => 'Back';
-
-  @override
-  String get basicSettings => 'Basic Settings';
+  String get backToMenu => 'Back to Menu';
 
   @override
   String get bestScore => 'Best Score';
 
   @override
-  String get bestScoreRule =>
-      'Record rule: shorter time, or same time with fewer mistakes';
-
-  @override
   String get bestTime => 'Best Time';
-
-  @override
-  String get better => 'Better';
-
-  @override
-  String get blockExclusion => 'Block Exclusion';
 
   @override
   String get cancel => 'Cancel';
@@ -67,7 +39,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get clear => 'Clear';
 
   @override
-  String get clearBestScores => 'Clear Best Scores';
+  String get clearAllStatsConfirm =>
+      'Are you sure you want to clear all statistics?';
 
   @override
   String get clearBoard => 'Clear Board';
@@ -76,23 +49,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get clearBoardConfirm => 'Are you sure you want to clear the board?';
 
   @override
-  String get clearCell => 'Clear Cell';
-
-  @override
   String get clearStatistics => 'Clear Statistics';
-
-  @override
-  String get clearStatisticsConfirmMessage =>
-      'Are you sure you want to clear all statistics? This action cannot be undone.';
-
-  @override
-  String get clearStatisticsConfirmTitle => 'Confirm Clear Statistics';
-
-  @override
-  String get combinedStatistics => 'Combined Statistics';
-
-  @override
-  String get completed => 'Completed';
 
   @override
   String get completedGames => 'Completed Games';
@@ -107,48 +64,38 @@ class AppLocalizationsEn extends AppLocalizations {
   String get congratulations => 'Congratulations!';
 
   @override
-  String get current => 'Current';
+  String get consecutiveDays => 'Consecutive Days';
 
   @override
-  String get customDifficulty => 'Custom Difficulty';
+  String get current => 'Current';
 
   @override
   String get customGame => 'Custom Game';
 
   @override
-  String get customGameError => 'Error';
+  String get customGameError => 'Error creating custom game';
 
   @override
   String get customGameErrorInvalid =>
-      'Invalid board: some numbers conflict with each other.';
+      'Invalid Sudoku. Please check your input.';
 
   @override
   String get customGameErrorMultipleSolutions =>
-      'This board has multiple solutions. Please add more numbers.';
+      'This Sudoku has multiple solutions.';
 
   @override
-  String get customGameErrorTooFew => 'Please fill at least 17 cells.';
+  String get customGameErrorTooFew =>
+      'Too few numbers entered. Please add more.';
 
   @override
-  String get customGameInstruction1 => 'Tap a cell to select it';
+  String get customGameInstruction1 => 'Enter numbers from 1-9 in the grid.';
 
   @override
-  String get customGameInstruction2 => 'Use the number pad to fill in numbers';
+  String get customGameInstruction2 =>
+      'Leave empty cells for the puzzle to solve.';
 
   @override
-  String get customGameInstruction3 => 'Tap the same number to delete it';
-
-  @override
-  String get customGameInstruction4 => 'Tap \"Start Game\" when finished';
-
-  @override
-  String get customGameInstructions => 'Custom Game Instructions';
-
-  @override
-  String get darkMode => 'Dark Mode';
-
-  @override
-  String get daysAgo => 'days ago';
+  String get customSudoku => 'Custom Sudoku';
 
   @override
   String get difficulty => 'Difficulty';
@@ -158,9 +105,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get difficultyCustom => 'Custom';
-
-  @override
-  String get difficultyDistribution => 'Difficulty Distribution';
 
   @override
   String get difficultyEasy => 'Easy';
@@ -178,29 +122,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get difficultyMedium => 'Medium';
 
   @override
-  String get difficultyPerformance => 'Difficulty Performance';
-
-  @override
-  String get difficultyStatistics => 'Difficulty Statistics';
-
-  @override
-  String get efficient => 'Efficient';
-
-  @override
-  String get efficientModeDescription =>
-      'Efficient Mode: Uses preset templates for fast generation with stable quality';
-
-  @override
-  String get equalGamesPlayed => 'Both games played equally';
-
-  @override
   String get erase => 'Erase';
 
   @override
   String get error => 'Error';
-
-  @override
-  String get exportFailed => 'Failed to export statistics';
 
   @override
   String get exportStatistics => 'Export Statistics';
@@ -209,38 +134,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gameComparison => 'Game Comparison';
 
   @override
-  String get gameCompletionRate => 'Game Completion Rate';
-
-  @override
-  String gameDifficulty(Object level) {
-    return 'Difficulty: $level';
-  }
-
-  @override
-  String gameMistakes(Object count) {
-    return 'Mistakes: $count';
-  }
-
-  @override
   String get gameRules => 'Game Rules';
-
-  @override
-  String get gameSettings => 'Game Settings';
-
-  @override
-  String gameTime(Object time) {
-    return 'Time: $time';
-  }
-
-  @override
-  String get gameTrends => 'Game Trends';
-
-  @override
-  String get gameTypeCustomDescription =>
-      'A fully customizable Sudoku game where you can set any rules and regions';
-
-  @override
-  String get gameTypeCustomName => 'Custom Sudoku';
 
   @override
   String get gameTypeDiagonalDescription =>
@@ -300,31 +194,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get generationFailedTitle => 'Generation Failed';
 
   @override
-  String get generator => 'Generator';
-
-  @override
-  String get getHint => 'Get Hint';
-
-  @override
-  String get help => 'Help';
-
-  @override
   String get hint => 'Hint';
 
   @override
-  String get hiddenPairsTriples => 'Hidden Pairs/Triples';
-
-  @override
-  String get hiddenSingles => 'Hidden Singles';
-
-  @override
-  String get highlightMistakes => 'Highlight Mistakes';
-
-  @override
-  String get home => 'Home';
-
-  @override
-  String get homeTitle => 'Sudoku Game';
+  String get homeCopyright => '© 2026 Topking Software';
 
   @override
   String homeVersion(Object version) {
@@ -332,49 +205,25 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get hoursAgo => 'hours ago';
+  String get incompleteGames => 'Incomplete Games';
 
   @override
-  String get hybrid => 'Hybrid';
-
-  @override
-  String get hybridModeDescription =>
-      'Hybrid Mode: Uses preset region templates with random answers for balanced performance';
-
-  @override
-  String get jigsawCustomNotSupported =>
-      'Jigsaw Sudoku does not support custom games yet';
+  String get individualGameStats => 'Individual Game Stats';
 
   @override
   String get loadGame => 'Load Game';
 
   @override
-  String get deleteSavedGame => 'Delete Saved Game';
+  String get loading => 'Loading...';
 
   @override
-  String get deleteSavedGameConfirm =>
-      'Are you sure you want to delete this saved game?';
-
-  @override
-  String get delete => 'Delete';
+  String get longestStreak => 'Longest Streak';
 
   @override
   String get mark => 'Mark';
 
   @override
-  String get markCells => 'Mark Cells';
-
-  @override
-  String get minutesAgo => 'minutes ago';
-
-  @override
   String get mistakes => 'Mistakes';
-
-  @override
-  String get music => 'Music';
-
-  @override
-  String get nakedPairsTriples => 'Naked Pairs/Triples';
 
   @override
   String get newGame => 'New Game';
@@ -390,20 +239,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get newRecord => 'New Record!';
 
   @override
-  String get newRecordMessage =>
-      'Congratulations! You\'ve set a new best record!';
-
-  @override
-  String get noGamesPlayed => 'No games played yet';
-
-  @override
-  String get noSavedGame => 'No saved game found.';
+  String get newRecordMessage => 'You have set a new record!';
 
   @override
   String get noStatistics => 'No statistics available';
-
-  @override
-  String get notCompleted => 'Not Completed';
 
   @override
   String get ok => 'OK';
@@ -412,44 +251,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get okButton => 'OK';
 
   @override
+  String get operationFailed => 'Operation Failed';
+
+  @override
+  String get operationSuccess => 'Operation Successful';
+
+  @override
   String get overview => 'Overview';
 
   @override
-  String get playedMore => ' played more';
+  String get processing => 'Processing...';
 
   @override
-  String get pleaseWait => 'Please Wait';
-
-  @override
-  String get puzzleCompleted => 'Puzzle Completed!';
-
-  @override
-  String get random => 'Random';
-
-  @override
-  String get randomModeDescription =>
-      'Random Mode: Uses backtracking algorithm for random generation, different every time';
-
-  @override
-  String get recentGames => 'Recent Games';
+  String get puzzleCompleted => 'Puzzle Completed';
 
   @override
   String get redo => 'Redo';
 
   @override
-  String get regionNumbers => 'Region Numbers';
-
-  @override
   String get reset => 'Reset';
-
-  @override
-  String get resetGame => 'Reset Game';
-
-  @override
-  String get retry => 'Retry';
-
-  @override
-  String get save => 'Save';
 
   @override
   String get selectDifficulty => 'Select Difficulty';
@@ -461,9 +281,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get selectSudokuTypeHint => 'Please select a Sudoku type';
 
   @override
-  String get settings => 'Settings';
-
-  @override
   String get settingsAudio => 'Audio';
 
   @override
@@ -473,19 +290,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsBasicSettings => 'Basic Settings';
 
   @override
-  String get settingsAdvancedStrategies => 'Advanced Strategies';
+  String get settingsCandidateSettings => 'Candidate Settings';
 
   @override
-  String get settingsGameSettings => 'General Settings';
+  String get settingsGameSettings => 'Game Settings';
 
   @override
   String get settingsGameSettingsTab => 'Game Settings';
-
-  @override
-  String get settingsHiddenPairsTriples => 'Hidden Pairs/Triples';
-
-  @override
-  String get settingsHiddenSingles => 'Hidden Singles';
 
   @override
   String get settingsHighlightMistakes => 'Highlight Mistakes';
@@ -495,51 +306,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsMusic => 'Music';
-
-  @override
-  String get settingsNakedPairsTriples => 'Naked Pairs/Triples';
-
-  @override
-  String get settingsCandidateSettings => 'Candidate Settings';
-
-  @override
-  String get settingsDisplayMode => 'Display Mode';
-
-  @override
-  String get settingsDisplayModeDirect => 'Direct Fill';
-
-  @override
-  String get settingsDisplayModeBubble => 'Bubble Hint';
-
-  @override
-  String get settingsDisplayModeDialog => 'Dialog Hint';
-
-  @override
-  String get settingsHintSettings => 'Hint Settings';
-
-  @override
-  String get settingsHintMode => 'Hint Mode';
-
-  @override
-  String get settingsHintModeDirect => 'Direct Fill';
-
-  @override
-  String get settingsHintModeStrategy => 'Strategy Hint';
-
-  @override
-  String get settingsHintModeLearning => 'Learning Mode';
-
-  @override
-  String get settingsHintModeDetailed => 'Detailed Guide';
-
-  @override
-  String get settingsHintModeCompleteReasoning => 'Complete Reasoning';
-
-  @override
-  String get settingsUseAdvancedStrategy => 'Use Advanced Strategy';
-
-  @override
-  String get settingsSwordfish => 'Swordfish';
 
   @override
   String get settingsTheme => 'Theme';
@@ -554,13 +320,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsTitle => 'Settings';
 
   @override
-  String get settingsXWing => 'X-Wing';
-
-  @override
-  String get showDiagonalLines => 'Show Diagonal Lines';
-
-  @override
-  String get showSolution => 'Show Solution';
+  String get settingsUseAdvancedStrategy => 'Use Advanced Strategy';
 
   @override
   String get solution => 'Solution';
@@ -569,25 +329,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get soundEffects => 'Sound Effects';
 
   @override
-  String get startGame => 'Start Game';
+  String get startNewGame => 'Start New Game';
 
   @override
-  String get startNewGame => 'New Game';
+  String get statisticsExported => 'Statistics exported successfully';
 
   @override
-  String get statisticsExported => 'Statistics exported';
+  String get statisticsTitle => 'Statistics';
 
   @override
-  String get statisticsTitle => 'Game Statistics';
+  String get statsCleared => 'Statistics cleared successfully';
 
   @override
   String get summary => 'Summary';
-
-  @override
-  String get sudokuRules => 'Sudoku Rules';
-
-  @override
-  String get swordfish => 'Swordfish';
 
   @override
   String get time => 'Time';
@@ -597,76 +351,4 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get undo => 'Undo';
-
-  @override
-  String get undoRedoOperation => 'Undo/Redo Operation';
-
-  @override
-  String get weeklySummary => 'Weekly Summary';
-
-  @override
-  String get xWing => 'X-Wing';
-
-  @override
-  String get yesterday => 'Yesterday';
-
-  @override
-  String get homeCopyright => '© 2026 Topking Software';
-
-  @override
-  String get loading => 'Loading...';
-
-  @override
-  String get processing => 'Processing...';
-
-  @override
-  String get operationSuccess => 'Operation Successful';
-
-  @override
-  String get operationFailed => 'Operation Failed';
-
-  @override
-  String get clearAllStatsConfirm =>
-      'Are you sure you want to clear all game statistics? This action cannot be undone.';
-
-  @override
-  String get statsCleared => 'All statistics have been cleared';
-
-  @override
-  String get individualGameStats => 'Individual Game Statistics';
-
-  @override
-  String get incompleteGames => 'Incomplete Games';
-
-  @override
-  String get consecutiveDays => 'Consecutive Days';
-
-  @override
-  String get longestStreak => 'Longest Streak';
-
-  @override
-  String get noNumbers => 'No Numbers';
-
-  @override
-  String get close => 'Close';
-
-  @override
-  String get apply => 'Apply';
-
-  @override
-  String get customSudoku => 'Custom Sudoku';
-
-  @override
-  String get customSudokuGame => 'Custom Sudoku Game';
-
-  @override
-  String cellShouldContain(Object row, Object col, Object value) {
-    return 'Row $row, Column $col should contain $value';
-  }
-
-  @override
-  String get row => 'Row';
-
-  @override
-  String get col => 'Column';
 }

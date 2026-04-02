@@ -1,6 +1,7 @@
 # Flutter
 .flutter-plugins
 .flutter-plugins-dependencies
+.dart_tool/
 .pub-cache/
 .pub/
 build/

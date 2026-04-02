@@ -1,879 +1,449 @@
 {
   "@@locale": "zh",
-  "activeGameTypes": "活跃游戏类型",
   "@activeGameTypes": {
-    "description": "Active game types label"
+    "description": "activeGameTypes"
   },
-  "advancedExclusion": "高级排除逻辑",
-  "@advancedExclusion": {
-    "description": "Advanced exclusion logic setting"
-  },
-  "advancedSettings": "高级设置",
-  "@advancedSettings": {
-    "description": "Advanced settings tab"
-  },
-  "appName": "数独",
   "@appName": {
-    "description": "App name"
+    "description": "appName"
   },
-  "autoCheck": "自动检查",
-  "@autoCheck": {
-    "description": "Auto check setting"
-  },
-  "autoMark": "自动标记",
   "@autoMark": {
-    "description": "Auto Mark button"
+    "description": "autoMark"
   },
-  "autoMarkPossibilities": "自动标记可能值",
-  "@autoMarkPossibilities": {
-    "description": "Auto mark possibilities description"
-  },
-  "autoSave": "自动保存",
-  "@autoSave": {
-    "description": "Auto save setting"
-  },
-  "averageMistakes": "平均错误",
   "@averageMistakes": {
-    "description": "Average mistakes label"
+    "description": "averageMistakes"
   },
-  "averageTime": "平均用时",
   "@averageTime": {
-    "description": "Average time label"
+    "description": "averageTime"
   },
-  "backToMenu": "返回",
   "@backToMenu": {
-    "description": "Back to menu button"
+    "description": "backToMenu"
   },
-  "basicSettings": "基础设置",
-  "@basicSettings": {
-    "description": "Basic settings tab"
-  },
-  "bestScore": "最佳记录",
   "@bestScore": {
-    "description": "Best score label"
+    "description": "bestScore"
   },
-  "bestScoreRule": "记录规则：用时更短，或用时相同但错误更少",
-  "@bestScoreRule": {
-    "description": "Best score rule description"
-  },
-  "bestTime": "最佳用时",
   "@bestTime": {
-    "description": "Best time label"
+    "description": "bestTime"
   },
-  "better": "更好",
-  "@better": {
-    "description": "Better performance indicator"
-  },
-  "blockExclusion": "区块排除法",
-  "@blockExclusion": {
-    "description": "Block exclusion logic"
-  },
-  "cancel": "取消",
   "@cancel": {
-    "description": "Cancel button"
+    "description": "cancel"
   },
-  "clear": "清除",
   "@clear": {
-    "description": "Clear button"
+    "description": "clear"
   },
-  "clearBestScores": "清除最佳记录",
-  "@clearBestScores": {
-    "description": "Clear best scores button"
+  "@clearAllStatsConfirm": {
+    "description": "clearAllStatsConfirm"
   },
-  "clearBoard": "清空棋盘",
   "@clearBoard": {
-    "description": "Clear board button"
+    "description": "clearBoard"
   },
-  "clearBoardConfirm": "确定要清空棋盘吗？",
   "@clearBoardConfirm": {
-    "description": "Clear board confirmation message"
+    "description": "clearBoardConfirm"
   },
-  "clearCell": "清除单元格",
-  "@clearCell": {
-    "description": "Clear cell description"
-  },
-  "clearStatistics": "清除统计",
   "@clearStatistics": {
-    "description": "Clear statistics button"
+    "description": "clearStatistics"
   },
-  "clearStatisticsConfirmMessage": "确定要清除所有统计数据吗？此操作无法撤销。",
-  "@clearStatisticsConfirmMessage": {
-    "description": "Clear statistics confirmation message"
-  },
-  "clearStatisticsConfirmTitle": "确认清除统计",
-  "@clearStatisticsConfirmTitle": {
-    "description": "Clear statistics confirmation title"
-  },
-  "combinedStatistics": "综合统计",
-  "@combinedStatistics": {
-    "description": "Combined statistics title"
-  },
-  "completed": "已完成",
-  "@completed": {
-    "description": "Completed"
-  },
-  "completedGames": "完成次数",
   "@completedGames": {
-    "description": "Completed games label"
+    "description": "completedGames"
   },
-  "completionRate": "完成率",
   "@completionRate": {
-    "description": "Completion rate label"
+    "description": "completionRate"
   },
-  "confirm": "确认",
   "@confirm": {
-    "description": "Confirm button"
+    "description": "confirm"
   },
-  "congratulations": "恭喜!",
   "@congratulations": {
-    "description": "Congratulations message"
+    "description": "congratulations"
   },
-  "current": "当前",
+  "@consecutiveDays": {
+    "description": "consecutiveDays"
+  },
   "@current": {
-    "description": "Current label"
+    "description": "current"
   },
-  "customDifficulty": "自定义难度",
-  "@customDifficulty": {
-    "description": "Custom difficulty title"
-  },
-  "customGame": "自定义游戏",
   "@customGame": {
-    "description": "Custom game title"
+    "description": "customGame"
   },
-  "customGameError": "错误",
   "@customGameError": {
-    "description": "Error title"
+    "description": "customGameError"
   },
-  "customGameErrorInvalid": "无效棋盘：某些数字相互冲突。",
   "@customGameErrorInvalid": {
-    "description": "Error message when board is invalid"
+    "description": "customGameErrorInvalid"
   },
-  "customGameErrorMultipleSolutions": "此棋盘有多个解，请添加更多数字。",
   "@customGameErrorMultipleSolutions": {
-    "description": "Error message when board has multiple solutions"
+    "description": "customGameErrorMultipleSolutions"
   },
-  "customGameErrorTooFew": "请至少填充17个单元格。",
   "@customGameErrorTooFew": {
-    "description": "Error message when too few cells are filled"
+    "description": "customGameErrorTooFew"
   },
-  "customGameInstruction1": "点击单元格选中它",
   "@customGameInstruction1": {
-    "description": "Custom game instruction 1"
+    "description": "customGameInstruction1"
   },
-  "customGameInstruction2": "使用数字键盘填充数字",
   "@customGameInstruction2": {
-    "description": "Custom game instruction 2"
+    "description": "customGameInstruction2"
   },
-  "customGameInstruction3": "点击相同数字可删除它",
-  "@customGameInstruction3": {
-    "description": "Custom game instruction 3"
+  "@customSudoku": {
+    "description": "customSudoku"
   },
-  "customGameInstruction4": "完成后点击\"开始游戏\"",
-  "@customGameInstruction4": {
-    "description": "Custom game instruction 4"
-  },
-  "customGameInstructions": "自定义游戏说明",
-  "@customGameInstructions": {
-    "description": "Custom game instructions title"
-  },
-  "darkMode": "深色模式",
-  "@darkMode": {
-    "description": "Dark mode setting"
-  },
-  "daysAgo": "天前",
-  "@daysAgo": {
-    "description": "Days ago"
-  },
-  "difficulty": "难度",
   "@difficulty": {
-    "description": "Difficulty label"
+    "description": "difficulty"
   },
-  "difficultyBeginner": "入门",
   "@difficultyBeginner": {
-    "description": "Beginner difficulty level"
+    "description": "difficultyBeginner"
   },
-  "difficultyCustom": "自定义",
   "@difficultyCustom": {
-    "description": "Custom difficulty level"
+    "description": "difficultyCustom"
   },
-  "difficultyDistribution": "难度分布",
-  "@difficultyDistribution": {
-    "description": "Difficulty distribution section title"
-  },
-  "difficultyEasy": "简单",
   "@difficultyEasy": {
-    "description": "Easy difficulty level"
+    "description": "difficultyEasy"
   },
-  "difficultyExpert": "专家",
   "@difficultyExpert": {
-    "description": "Expert difficulty level"
+    "description": "difficultyExpert"
   },
-  "difficultyHard": "困难",
   "@difficultyHard": {
-    "description": "Hard difficulty level"
+    "description": "difficultyHard"
   },
-  "difficultyMaster": "大师",
   "@difficultyMaster": {
-    "description": "Master difficulty level"
+    "description": "difficultyMaster"
   },
-  "difficultyMedium": "中等",
   "@difficultyMedium": {
-    "description": "Medium difficulty level"
+    "description": "difficultyMedium"
   },
-  "difficultyPerformance": "难度表现",
-  "@difficultyPerformance": {
-    "description": "Difficulty performance title"
-  },
-  "difficultyStatistics": "难度统计",
-  "@difficultyStatistics": {
-    "description": "Difficulty statistics section title"
-  },
-  "efficient": "高效",
-  "@efficient": {
-    "description": "Efficient label (short)"
-  },
-  "efficientModeDescription": "高效模式：使用预设模板快速生成，质量稳定",
-  "@efficientModeDescription": {
-    "description": "Efficient mode description"
-  },
-  "equalGamesPlayed": "两个游戏玩得一样多",
-  "@equalGamesPlayed": {
-    "description": "Equal games played message"
-  },
-  "erase": "清除",
   "@erase": {
-    "description": "Erase button"
+    "description": "erase"
   },
-  "error": "错误",
   "@error": {
-    "description": "Error title"
+    "description": "error"
   },
-  "exportFailed": "导出统计数据失败",
-  "@exportFailed": {
-    "description": "Export statistics failed message"
-  },
-  "exportStatistics": "导出统计",
   "@exportStatistics": {
-    "description": "Export statistics button"
+    "description": "exportStatistics"
   },
-  "gameComparison": "游戏对比",
   "@gameComparison": {
-    "description": "Game comparison title"
+    "description": "gameComparison"
   },
-  "gameCompletionRate": "游戏完成率",
-  "@gameCompletionRate": {
-    "description": "Game completion rate"
-  },
-  "gameDifficulty": "难度: {level}",
-  "@gameDifficulty": {
-    "description": "Display difficulty level",
-    "placeholders": {
-      "level": {
-        "example": "Medium"
-      }
-    }
-  },
-  "gameMistakes": "错误: {count}",
-  "@gameMistakes": {
-    "description": "Display mistake count",
-    "placeholders": {
-      "count": {
-        "example": "2"
-      }
-    }
-  },
-  "gameRules": "游戏规则",
   "@gameRules": {
-    "description": "Game rules dialog title"
+    "description": "gameRules"
   },
-  "gameSettings": "游戏设置",
-  "@gameSettings": {
-    "description": "Game settings section header"
-  },
-  "gameTime": "时间: {time}",
-  "@gameTime": {
-    "description": "Display game time",
-    "placeholders": {
-      "time": {
-        "example": "05:30"
-      }
-    }
-  },
-  "gameTrends": "游戏趋势",
-  "@gameTrends": {
-    "description": "Game trends title"
-  },
-  "gameTypeCustomDescription": "完全自定义的数独游戏，可以设置任意规则和区域",
-  "@gameTypeCustomDescription": {
-    "description": "Custom Sudoku game type description"
-  },
-  "gameTypeCustomName": "自定义数独",
-  "@gameTypeCustomName": {
-    "description": "Custom Sudoku type"
-  },
-  "gameTypeDiagonalDescription": "除了标准规则外，两条主对角线上的数字也不能重复",
   "@gameTypeDiagonalDescription": {
-    "description": "Diagonal Sudoku game type description"
+    "description": "gameTypeDiagonalDescription"
   },
-  "gameTypeDiagonalName": "对角线数独",
   "@gameTypeDiagonalName": {
-    "description": "Diagonal Sudoku type"
+    "description": "gameTypeDiagonalName"
   },
-  "gameTypeJigsawDescription": "不规则区域的数独游戏，每个不规则区域内的数字不能重复",
   "@gameTypeJigsawDescription": {
-    "description": "Jigsaw Sudoku game type description"
+    "description": "gameTypeJigsawDescription"
   },
-  "gameTypeJigsawName": "锯齿数独",
   "@gameTypeJigsawName": {
-    "description": "Jigsaw Sudoku type"
+    "description": "gameTypeJigsawName"
   },
-  "gameTypeKillerDescription": "包含数字和区域，每个区域内的数字之和必须等于指定值",
   "@gameTypeKillerDescription": {
-    "description": "Killer Sudoku game type description"
+    "description": "gameTypeKillerDescription"
   },
-  "gameTypeKillerName": "杀手数独",
   "@gameTypeKillerName": {
-    "description": "Killer Sudoku type"
+    "description": "gameTypeKillerName"
   },
-  "gameTypeSamuraiDescription": "五个标准数独交叉组成的复杂数独游戏",
   "@gameTypeSamuraiDescription": {
-    "description": "Samurai Sudoku game type description"
+    "description": "gameTypeSamuraiDescription"
   },
-  "gameTypeSamuraiName": "武士数独",
   "@gameTypeSamuraiName": {
-    "description": "Samurai Sudoku type"
+    "description": "gameTypeSamuraiName"
   },
-  "gameTypeStandardDescription": "经典的9x9数独游戏，每个宫格、每行、每列都不能有重复数字",
   "@gameTypeStandardDescription": {
-    "description": "Standard Sudoku game type description"
+    "description": "gameTypeStandardDescription"
   },
-  "gameTypeStandardName": "标准数独",
   "@gameTypeStandardName": {
-    "description": "Standard Sudoku type"
+    "description": "gameTypeStandardName"
   },
-  "gameTypeWindowDescription": "包含四个3x3窗口区域的数独游戏，窗口区域内的数字也不能重复",
   "@gameTypeWindowDescription": {
-    "description": "Window Sudoku game type description"
+    "description": "gameTypeWindowDescription"
   },
-  "gameTypeWindowName": "窗口数独",
   "@gameTypeWindowName": {
-    "description": "Window Sudoku type"
+    "description": "gameTypeWindowName"
   },
-  "generatingGame": "正在生成游戏，请稍候...",
   "@generatingGame": {
-    "description": "Generating game message"
+    "description": "generatingGame"
   },
-  "generationFailedError": "错误: {error}",
   "@generationFailedError": {
-    "description": "Generation failed error",
+    "description": "generationFailedError",
     "placeholders": {
       "error": {
-        "example": "Error message"
+        "example": "error"
       }
     }
   },
-  "generationFailedMessage": "生成游戏失败，请重试。",
   "@generationFailedMessage": {
-    "description": "Generation failed message"
+    "description": "generationFailedMessage"
   },
-  "generationFailedTitle": "生成失败",
   "@generationFailedTitle": {
-    "description": "Generation failed title"
+    "description": "generationFailedTitle"
   },
-  "generator": "生成器",
-  "@generator": {
-    "description": "Generator label (short)"
-  },
-  "getHint": "获取提示",
-  "@getHint": {
-    "description": "Get hint description"
-  },
-  "help": "功能按键",
-  "@help": {
-    "description": "Help button"
-  },
-  "hint": "提示",
   "@hint": {
-    "description": "Hint button"
+    "description": "hint"
   },
-  "hiddenPairsTriples": "隐性数对/三链数排除法",
-  "@hiddenPairsTriples": {
-    "description": "Hidden pairs/triples exclusion logic"
+  "@homeCopyright": {
+    "description": "homeCopyright"
   },
-  "hiddenSingles": "隐藏唯一候选数",
-  "@hiddenSingles": {
-    "description": "Hidden singles exclusion logic"
-  },
-  "highlightMistakes": "高亮错误",
-  "@highlightMistakes": {
-    "description": "Highlight mistakes setting"
-  },
-  "home": "首页",
-  "@home": {
-    "description": "Home button"
-  },
-  "homeTitle": "数独游戏",
-  "@homeTitle": {
-    "description": "Home screen title"
-  },
-  "homeVersion": "版本 {version}",
   "@homeVersion": {
-    "description": "Home version label",
+    "description": "homeVersion",
     "placeholders": {
       "version": {
-        "example": "5.0.2"
+        "example": "version"
       }
     }
   },
-  "hoursAgo": "小时前",
-  "@hoursAgo": {
-    "description": "Hours ago"
-  },
-  "hybrid": "混合",
-  "@hybrid": {
-    "description": "Hybrid label (short)"
-  },
-  "hybridModeDescription": "混合模式：使用预设区域模板，生成随机答案，性能平衡",
-  "@hybridModeDescription": {
-    "description": "Hybrid mode description"
-  },
-  "jigsawCustomNotSupported": "锯齿数独暂不支持自定义游戏",
-  "@jigsawCustomNotSupported": {
-    "description": "Jigsaw Sudoku custom game not supported message"
-  },
-  "loadGame": "加载游戏",
-  "@loadGame": {
-    "description": "Load game button"
-  },
-  "deleteSavedGame": "删除存档",
-  "@deleteSavedGame": {
-    "description": "Delete saved game button"
-  },
-  "deleteSavedGameConfirm": "确定要删除这个存档吗？",
-  "@deleteSavedGameConfirm": {
-    "description": "Delete saved game confirmation message"
-  },
-  "delete": "删除",
-  "@delete": {
-    "description": "Delete button"
-  },
-  "mark": "标记",
-  "@mark": {
-    "description": "Mark button"
-  },
-  "markCells": "标记单元格",
-  "@markCells": {
-    "description": "Mark cells description"
-  },
-  "minutesAgo": "分钟前",
-  "@minutesAgo": {
-    "description": "Minutes ago"
-  },
-  "mistakes": "错误",
-  "@mistakes": {
-    "description": "Mistakes label"
-  },
-  "music": "音乐",
-  "@music": {
-    "description": "Music setting"
-  },
-  "nakedPairsTriples": "数对/三链数排除法",
-  "@nakedPairsTriples": {
-    "description": "Naked pairs/triples exclusion logic"
-  },
-  "newGame": "新游戏",
-  "@newGame": {
-    "description": "New game button"
-  },
-  "newGameConfirm": "开始新游戏?",
-  "@newGameConfirm": {
-    "description": "Confirmation dialog for new game"
-  },
-  "newGameConfirmContent": "确定要开始新游戏吗？当前进度将会丢失。",
-  "@newGameConfirmContent": {
-    "description": "Confirmation dialog content for new game"
-  },
-  "newRecord": "新纪录！",
-  "@newRecord": {
-    "description": "New record title"
-  },
-  "newRecordMessage": "恭喜！你创造了新的最佳记录！",
-  "@newRecordMessage": {
-    "description": "New record message"
-  },
-  "noGamesPlayed": "还没有玩过游戏",
-  "@noGamesPlayed": {
-    "description": "No games played message"
-  },
-  "noSavedGame": "未找到存档游戏。",
-  "@noSavedGame": {
-    "description": "Message when no saved game is found"
-  },
-  "noStatistics": "暂无统计数据",
-  "@noStatistics": {
-    "description": "No statistics message"
-  },
-  "notCompleted": "未完成",
-  "@notCompleted": {
-    "description": "Not completed"
-  },
-  "ok": "确定",
-  "@ok": {
-    "description": "OK button"
-  },
-  "okButton": "确定",
-  "@okButton": {
-    "description": "OK button"
-  },
-  "overview": "概览",
-  "@overview": {
-    "description": "Overview section title"
-  },
-  "playedMore": " 玩得更多",
-  "@playedMore": {
-    "description": "Played more games"
-  },
-  "pleaseWait": "请稍候",
-  "@pleaseWait": {
-    "description": "Please wait message"
-  },
-  "puzzleCompleted": "数独谜题已完成！",
-  "@puzzleCompleted": {
-    "description": "Puzzle completed message"
-  },
-  "random": "随机",
-  "@random": {
-    "description": "Random label (short)"
-  },
-  "randomModeDescription": "随机模式：使用回溯算法随机生成，每次都不同",
-  "@randomModeDescription": {
-    "description": "Random mode description"
-  },
-  "recentGames": "最近游戏",
-  "@recentGames": {
-    "description": "Recent games section title"
-  },
-  "redo": "重做",
-  "@redo": {
-    "description": "Redo button"
-  },
-  "regionNumbers": "编号",
-  "@regionNumbers": {
-    "description": "Region numbers toggle label"
-  },
-  "reset": "重置",
-  "@reset": {
-    "description": "Reset button"
-  },
-  "resetGame": "重置游戏",
-  "@resetGame": {
-    "description": "Reset game description"
-  },
-  "retry": "重试",
-  "@retry": {
-    "description": "Retry button"
-  },
-  "save": "保存",
-  "@save": {
-    "description": "Save button"
-  },
-  "selectDifficulty": "难度选择",
-  "@selectDifficulty": {
-    "description": "Select difficulty title"
-  },
-  "selectSudokuType": "选择数独类型",
-  "@selectSudokuType": {
-    "description": "Select Sudoku type title"
-  },
-  "selectSudokuTypeHint": "请选择一种数独类型",
-  "@selectSudokuTypeHint": {
-    "description": "Hint for selecting Sudoku type"
-  },
-  "settings": "设置",
-  "@settings": {
-    "description": "Settings button"
-  },
-  "settingsAudio": "音频",
-  "@settingsAudio": {
-    "description": "Audio setting"
-  },
-  "settingsAutoCheck": "自动检查",
-  "@settingsAutoCheck": {
-    "description": "Auto check setting"
-  },
-  "settingsBasicSettings": "基本设置",
-  "@settingsBasicSettings": {
-    "description": "Basic settings tab"
-  },
-  "settingsAdvancedStrategies": "高级策略",
-  "@settingsAdvancedStrategies": {
-    "description": "Advanced strategies setting"
-  },
-  "settingsGameSettings": "通用设置",
-  "@settingsGameSettings": {
-    "description": "Game settings"
-  },
-  "settingsGameSettingsTab": "游戏设置",
-  "@settingsGameSettingsTab": {
-    "description": "Game settings tab"
-  },
-  "settingsHiddenPairsTriples": "隐性数对/三链数排除法",
-  "@settingsHiddenPairsTriples": {
-    "description": "Hidden pairs/triples setting"
-  },
-  "settingsHiddenSingles": "隐藏唯一候选数",
-  "@settingsHiddenSingles": {
-    "description": "Hidden singles setting"
-  },
-  "settingsHighlightMistakes": "高亮错误",
-  "@settingsHighlightMistakes": {
-    "description": "Highlight mistakes setting"
-  },
-  "settingsLanguage": "语言",
-  "@settingsLanguage": {
-    "description": "Language setting"
-  },
-  "settingsMusic": "音乐",
-  "@settingsMusic": {
-    "description": "Music setting"
-  },
-  "settingsNakedPairsTriples": "数对/三链数排除法",
-  "@settingsNakedPairsTriples": {
-    "description": "Naked pairs/triples setting"
-  },
-  "settingsCandidateSettings": "候选数设置",
-  "@settingsCandidateSettings": {
-    "description": "Candidate settings"
-  },
-  "settingsDisplayMode": "显示方式",
-  "@settingsDisplayMode": {
-    "description": "Display mode"
-  },
-  "settingsDisplayModeDirect": "直接填入",
-  "@settingsDisplayModeDirect": {
-    "description": "Direct fill display mode"
-  },
-  "settingsDisplayModeBubble": "气泡提示",
-  "@settingsDisplayModeBubble": {
-    "description": "Bubble hint display mode"
-  },
-  "settingsDisplayModeDialog": "对话框提示",
-  "@settingsDisplayModeDialog": {
-    "description": "Dialog hint display mode"
-  },
-  "settingsHintSettings": "提示设置",
-  "@settingsHintSettings": {
-    "description": "Hint settings"
-  },
-  "settingsHintMode": "提示模式",
-  "@settingsHintMode": {
-    "description": "Hint mode"
-  },
-  "settingsHintModeDirect": "直接填入",
-  "@settingsHintModeDirect": {
-    "description": "Direct fill hint mode"
-  },
-  "settingsHintModeStrategy": "策略提示",
-  "@settingsHintModeStrategy": {
-    "description": "Strategy hint mode"
-  },
-  "settingsHintModeLearning": "学习模式",
-  "@settingsHintModeLearning": {
-    "description": "Learning hint mode"
-  },
-  "settingsHintModeDetailed": "详细指导",
-  "@settingsHintModeDetailed": {
-    "description": "Detailed hint mode"
-  },
-  "settingsHintModeCompleteReasoning": "完整推理",
-  "@settingsHintModeCompleteReasoning": {
-    "description": "Complete reasoning hint mode"
-  },
-  "settingsUseAdvancedStrategy": "使用高级策略",
-  "@settingsUseAdvancedStrategy": {
-    "description": "Use advanced strategy"
-  },
-  "settingsSwordfish": "Swordfish 排除法",
-  "@settingsSwordfish": {
-    "description": "Swordfish setting"
-  },
-  "settingsTheme": "主题",
-  "@settingsTheme": {
-    "description": "Theme setting"
-  },
-  "settingsThemeDark": "深色",
-  "@settingsThemeDark": {
-    "description": "Dark theme"
-  },
-  "settingsThemeLight": "浅色",
-  "@settingsThemeLight": {
-    "description": "Light theme"
-  },
-  "settingsTitle": "设置",
-  "@settingsTitle": {
-    "description": "Settings title"
-  },
-  "settingsXWing": "X-Wing 排除法",
-  "@settingsXWing": {
-    "description": "X-Wing setting"
-  },
-  "showDiagonalLines": "显示对角线",
-  "@showDiagonalLines": {
-    "description": "Show diagonal lines toggle label"
-  },
-  "showSolution": "显示答案",
-  "@showSolution": {
-    "description": "Show solution description"
-  },
-  "solution": "答案",
-  "@solution": {
-    "description": "Solution button"
-  },
-  "soundEffects": "音效",
-  "@soundEffects": {
-    "description": "Sound effects setting"
-  },
-  "startGame": "开始游戏",
-  "@startGame": {
-    "description": "Start game button"
-  },
-  "startNewGame": "新游戏",
-  "@startNewGame": {
-    "description": "Start new game description"
-  },
-  "statisticsExported": "统计数据已导出",
-  "@statisticsExported": {
-    "description": "Statistics exported message"
-  },
-  "statisticsTitle": "游戏统计",
-  "@statisticsTitle": {
-    "description": "Statistics screen title"
-  },
-  "summary": "概览",
-  "@summary": {
-    "description": "Summary label"
-  },
-  "sudokuRules": "数独规则",
-  "@sudokuRules": {
-    "description": "Sudoku rules title"
-  },
-  "swordfish": "Swordfish 排除法",
-  "@swordfish": {
-    "description": "Swordfish exclusion logic"
-  },
-  "time": "时间",
-  "@time": {
-    "description": "Time label"
-  },
-  "totalGames": "总游戏次数",
-  "@totalGames": {
-    "description": "Total games label"
-  },
-  "undo": "撤销",
-  "@undo": {
-    "description": "Undo button"
-  },
-  "undoRedoOperation": "撤销/重做操作",
-  "@undoRedoOperation": {
-    "description": "Undo/Redo operation description"
-  },
-  "weeklySummary": "本周统计",
-  "@weeklySummary": {
-    "description": "Weekly summary title"
-  },
-  "xWing": "X-Wing 排除法",
-  "@xWing": {
-    "description": "X-Wing exclusion logic"
-  },
-  "yesterday": "昨天",
-  "@yesterday": {
-    "description": "Yesterday"
-  },
-  "homeCopyright": "版权所有, © 2026 天王软件工作室",
-  "@homeCopyright": {
-    "description": "Home screen copyright information"
-  },
-  "loading": "正在加载...",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "processing": "正在处理...",
-  "@processing": {
-    "description": "Processing message"
-  },
-  "operationSuccess": "操作成功",
-  "@operationSuccess": {
-    "description": "Operation success message"
-  },
-  "operationFailed": "操作失败",
-  "@operationFailed": {
-    "description": "Operation failed message"
-  },
-  "clearAllStatsConfirm": "确定要清除所有游戏类型的统计数据吗？此操作不可恢复。",
-  "@clearAllStatsConfirm": {
-    "description": "Clear all statistics confirmation message"
-  },
-  "statsCleared": "所有统计数据已清除",
-  "@statsCleared": {
-    "description": "Statistics cleared message"
-  },
-  "individualGameStats": "各游戏统计",
-  "@individualGameStats": {
-    "description": "Individual game statistics section title"
-  },
-  "incompleteGames": "未完成游戏",
   "@incompleteGames": {
-    "description": "Incomplete games section title"
+    "description": "incompleteGames"
   },
-  "consecutiveDays": "连续完成天数",
-  "@consecutiveDays": {
-    "description": "Consecutive days label"
+  "@individualGameStats": {
+    "description": "individualGameStats"
   },
-  "longestStreak": "最长连续天数",
+  "@loadGame": {
+    "description": "loadGame"
+  },
+  "@loading": {
+    "description": "loading"
+  },
   "@longestStreak": {
-    "description": "Longest streak label"
+    "description": "longestStreak"
   },
-  "noNumbers": "无数字",
-  "@noNumbers": {
-    "description": "No numbers message"
+  "@mark": {
+    "description": "mark"
   },
-  "close": "关闭",
-  "@close": {
-    "description": "Close button"
+  "@mistakes": {
+    "description": "mistakes"
   },
-  "apply": "应用",
-  "@apply": {
-    "description": "Apply button"
+  "@newGame": {
+    "description": "newGame"
   },
+  "@newGameConfirm": {
+    "description": "newGameConfirm"
+  },
+  "@newGameConfirmContent": {
+    "description": "newGameConfirmContent"
+  },
+  "@newRecord": {
+    "description": "newRecord"
+  },
+  "@newRecordMessage": {
+    "description": "newRecordMessage"
+  },
+  "@noStatistics": {
+    "description": "noStatistics"
+  },
+  "@ok": {
+    "description": "ok"
+  },
+  "@okButton": {
+    "description": "okButton"
+  },
+  "@operationFailed": {
+    "description": "operationFailed"
+  },
+  "@operationSuccess": {
+    "description": "operationSuccess"
+  },
+  "@overview": {
+    "description": "overview"
+  },
+  "@processing": {
+    "description": "processing"
+  },
+  "@puzzleCompleted": {
+    "description": "puzzleCompleted"
+  },
+  "@redo": {
+    "description": "redo"
+  },
+  "@reset": {
+    "description": "reset"
+  },
+  "@selectDifficulty": {
+    "description": "selectDifficulty"
+  },
+  "@selectSudokuType": {
+    "description": "selectSudokuType"
+  },
+  "@selectSudokuTypeHint": {
+    "description": "selectSudokuTypeHint"
+  },
+  "@settingsAudio": {
+    "description": "settingsAudio"
+  },
+  "@settingsAutoCheck": {
+    "description": "settingsAutoCheck"
+  },
+  "@settingsBasicSettings": {
+    "description": "settingsBasicSettings"
+  },
+  "@settingsCandidateSettings": {
+    "description": "settingsCandidateSettings"
+  },
+  "@settingsGameSettings": {
+    "description": "settingsGameSettings"
+  },
+  "@settingsGameSettingsTab": {
+    "description": "settingsGameSettingsTab"
+  },
+  "@settingsHighlightMistakes": {
+    "description": "settingsHighlightMistakes"
+  },
+  "@settingsLanguage": {
+    "description": "settingsLanguage"
+  },
+  "@settingsMusic": {
+    "description": "settingsMusic"
+  },
+  "@settingsTheme": {
+    "description": "settingsTheme"
+  },
+  "@settingsThemeDark": {
+    "description": "settingsThemeDark"
+  },
+  "@settingsThemeLight": {
+    "description": "settingsThemeLight"
+  },
+  "@settingsTitle": {
+    "description": "settingsTitle"
+  },
+  "@settingsUseAdvancedStrategy": {
+    "description": "settingsUseAdvancedStrategy"
+  },
+  "@solution": {
+    "description": "solution"
+  },
+  "@soundEffects": {
+    "description": "soundEffects"
+  },
+  "@startNewGame": {
+    "description": "startNewGame"
+  },
+  "@statisticsExported": {
+    "description": "statisticsExported"
+  },
+  "@statisticsTitle": {
+    "description": "statisticsTitle"
+  },
+  "@statsCleared": {
+    "description": "statsCleared"
+  },
+  "@summary": {
+    "description": "summary"
+  },
+  "@time": {
+    "description": "time"
+  },
+  "@totalGames": {
+    "description": "totalGames"
+  },
+  "@undo": {
+    "description": "undo"
+  },
+  "activeGameTypes": "活跃游戏类型",
+  "appName": "数独",
+  "autoMark": "自动标记",
+  "averageMistakes": "平均错误数",
+  "averageTime": "平均时间",
+  "backToMenu": "返回菜单",
+  "bestScore": "最佳分数",
+  "bestTime": "最佳时间",
+  "cancel": "取消",
+  "clear": "清空",
+  "clearAllStatsConfirm": "确定要清空所有统计数据吗？",
+  "clearBoard": "清空棋盘",
+  "clearBoardConfirm": "确定要清空棋盘吗？",
+  "clearStatistics": "清空统计",
+  "completedGames": "已完成游戏",
+  "completionRate": "完成率",
+  "confirm": "确认",
+  "congratulations": "恭喜！",
+  "consecutiveDays": "连续天数",
+  "current": "当前",
+  "customGame": "自定义游戏",
+  "customGameError": "创建自定义游戏时出错",
+  "customGameErrorInvalid": "无效的数独，请检查你的输入。",
+  "customGameErrorMultipleSolutions": "这个数独有多个解决方案。",
+  "customGameErrorTooFew": "输入的数字太少，请添加更多。",
+  "customGameInstruction1": "在网格中输入 1-9 的数字。",
+  "customGameInstruction2": "留下空单元格让 puzzle 解决。",
   "customSudoku": "自定义数独",
-  "@customSudoku": {
-    "description": "Custom Sudoku title"
-  },
-  "customSudokuGame": "自定义数独游戏",
-  "@customSudokuGame": {
-    "description": "Custom Sudoku game title"
-  },
-  "cellShouldContain": "第{row}行第{col}列应填入{value}",
-  "@cellShouldContain": {
-    "description": "Hint message for cell value",
-    "placeholders": {
-      "row": {
-        "example": "1"
-      },
-      "col": {
-        "example": "1"
-      },
-      "value": {
-        "example": "5"
-      }
-    }
-  },
-  "row": "行",
-  "@row": {
-    "description": "Row label"
-  },
-  "col": "列",
-  "@col": {
-    "description": "Column label"
-  }
+  "difficulty": "难度",
+  "difficultyBeginner": "初学者",
+  "difficultyCustom": "自定义",
+  "difficultyEasy": "简单",
+  "difficultyExpert": "专家",
+  "difficultyHard": "困难",
+  "difficultyMaster": "大师",
+  "difficultyMedium": "中等",
+  "erase": "擦除",
+  "error": "错误",
+  "exportStatistics": "导出统计",
+  "gameComparison": "游戏比较",
+  "gameRules": "游戏规则",
+  "gameTypeDiagonalDescription": "除标准规则外，两条主对角线上的数字也不能重复",
+  "gameTypeDiagonalName": "对角线数独",
+  "gameTypeJigsawDescription": "一种数独游戏，具有不规则区域，每个区域内的数字不能重复",
+  "gameTypeJigsawName": "锯齿数独",
+  "gameTypeKillerDescription": "包含数字和区域，每个区域内数字的和必须等于指定值",
+  "gameTypeKillerName": "杀手数独",
+  "gameTypeSamuraiDescription": "由五个标准数独 puzzle 相交组成的复杂数独游戏",
+  "gameTypeSamuraiName": "武士数独",
+  "gameTypeStandardDescription": "经典 9x9 数独游戏，每行、每列和每个 3x3 区块必须包含数字 1-9，不重复",
+  "gameTypeStandardName": "标准数独",
+  "gameTypeWindowDescription": "一种数独游戏，有四个 3x3 窗口区域，窗口区域内的数字不能重复",
+  "gameTypeWindowName": "窗口数独",
+  "generatingGame": "正在生成游戏，请稍候...",
+  "generationFailedError": "错误：{error}",
+  "generationFailedMessage": "生成游戏失败，请重试。",
+  "generationFailedTitle": "生成失败",
+  "hint": "提示",
+  "homeCopyright": "© 2026 Topking Software",
+  "homeVersion": "版本 {version}",
+  "incompleteGames": "未完成游戏",
+  "individualGameStats": "个人游戏统计",
+  "loadGame": "加载游戏",
+  "loading": "加载中...",
+  "longestStreak": "最长连续记录",
+  "mark": "标记",
+  "mistakes": "错误",
+  "newGame": "新游戏",
+  "newGameConfirm": "开始新游戏？",
+  "newGameConfirmContent": "确定要开始新游戏吗？当前进度将丢失。",
+  "newRecord": "新记录！",
+  "newRecordMessage": "你创造了新记录！",
+  "noStatistics": "暂无统计数据",
+  "ok": "确定",
+  "okButton": "确定",
+  "operationFailed": "操作失败",
+  "operationSuccess": "操作成功",
+  "overview": "概览",
+  "processing": "处理中...",
+  "puzzleCompleted": " puzzle 完成",
+  "redo": "重做",
+  "reset": "重置",
+  "selectDifficulty": "选择难度",
+  "selectSudokuType": "选择数独类型",
+  "selectSudokuTypeHint": "请选择数独类型",
+  "settingsAudio": "音频",
+  "settingsAutoCheck": "自动检查",
+  "settingsBasicSettings": "基本设置",
+  "settingsCandidateSettings": "候选数设置",
+  "settingsGameSettings": "游戏设置",
+  "settingsGameSettingsTab": "游戏设置",
+  "settingsHighlightMistakes": "高亮错误",
+  "settingsLanguage": "语言",
+  "settingsMusic": "音乐",
+  "settingsTheme": "主题",
+  "settingsThemeDark": "深色",
+  "settingsThemeLight": "浅色",
+  "settingsTitle": "设置",
+  "settingsUseAdvancedStrategy": "使用高级策略",
+  "solution": "解决方案",
+  "soundEffects": "音效",
+  "startNewGame": "开始新游戏",
+  "statisticsExported": "统计数据已成功导出",
+  "statisticsTitle": "统计",
+  "statsCleared": "统计数据已成功清空",
+  "summary": "总结",
+  "time": "时间",
+  "totalGames": "总游戏数",
+  "undo": "撤销"
 }
