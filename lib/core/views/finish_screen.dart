@@ -82,15 +82,9 @@ abstract class FinishScreenTemplate<T extends GameViewModel, S extends GameServi
   @protected
   Future<Map<String, dynamic>> loadBestScores(BuildContext context) async {
     try {
-      // 只加载当前难度的最佳成绩，而不是所有难度
-      final currentDifficulty = getCurrentDifficulty(context);
-      final score = await gameService.getBestScore(difficulty: currentDifficulty);
-      
-      // 如果找到成绩，返回包含当前难度的Map
-      if (score != null) {
-        return {currentDifficulty: score};
-      }
-      return {};
+      final scores = await gameService.getBestScores();
+      // 确保返回的是 Map<String, dynamic>
+      return Map<String, dynamic>.from(scores);
     } catch (e) {
       // 加载失败时返回空 Map
       return {};
@@ -231,43 +225,53 @@ class FinishScreenTemplateState<T extends GameViewModel, S extends GameService> 
     final currentDifficulty = widget.getCurrentDifficulty(context);
 
     try {
-      // 1. 并行执行不相关的操作
-      final saveStatisticsFuture = widget.saveGameStatistics(context);
-      final clearGameFuture = widget.clearSavedGame(context);
-
-      // 2. 等待所有并行操作完成
-      await Future.wait([saveStatisticsFuture, clearGameFuture]);
-
+      // 1. 首先加载最佳成绩
+      final loadedScores = await widget.loadBestScores(context);
       if (!mounted) return;
 
-      // 3. 保存最佳成绩
-      final isNewBest = await widget.saveBestScore(context);
-
-      if (!mounted) return;
-
-      // 4. 更新最佳成绩
-      final updatedScores = await widget.loadBestScores(context);
-      if (!mounted) return;
-
-      _bestScores = updatedScores.isNotEmpty ? updatedScores : {
+      // 2. 立即显示完成页面，使用当前加载的成绩
+      _bestScores = loadedScores.isNotEmpty ? loadedScores : {
         currentDifficulty: {
           'time': currentTime,
           'mistakes': currentMistakes,
         }
       };
 
-      // 5. 数据加载完成，显示完成页面
+      // 3. 立即更新UI，显示完成页面
       if (mounted) {
         setState(() {
           _isLoading = false;
         });
       }
 
-      // 6. 显示新纪录对话框
+      // 4. 在后台执行其他操作
+      // 保存最佳成绩
+      final isNewBest = await widget.saveBestScore(context);
+      if (!mounted) return;
+
+      // 保存游戏统计
+      await widget.saveGameStatistics(context);
+      if (!mounted) return;
+
+      // 清除保存的游戏
+      await widget.clearSavedGame(context);
+      if (!mounted) return;
+
+      // 5. 如果是新纪录，显示对话框
       if (isNewBest && !_hasShownDialog) {
         _hasShownDialog = true;
         if (mounted) {
           await _showNewRecordDialogAsync();
+        }
+      }
+
+      // 6. 如果是新纪录，更新最佳成绩显示
+      if (isNewBest && mounted) {
+        final updatedScores = await widget.loadBestScores(context);
+        if (mounted) {
+          setState(() {
+            _bestScores = updatedScores;
+          });
         }
       }
     } catch (e) {
