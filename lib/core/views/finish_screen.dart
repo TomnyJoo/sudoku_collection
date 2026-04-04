@@ -224,70 +224,59 @@ class FinishScreenTemplateState<T extends GameViewModel, S extends GameService> 
     final currentMistakes = widget.getMistakes(context);
     final currentDifficulty = widget.getCurrentDifficulty(context);
 
-    try {
-      // 1. 首先加载最佳成绩
-      final loadedScores = await widget.loadBestScores(context);
-      if (!mounted) return;
-
-      // 2. 立即显示完成页面，使用当前加载的成绩
-      _bestScores = loadedScores.isNotEmpty ? loadedScores : {
-        currentDifficulty: {
-          'time': currentTime,
-          'mistakes': currentMistakes,
-        }
-      };
-
-      // 3. 立即更新UI，显示完成页面
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
+    // 1. 立即显示完成页面，使用当前成绩作为最佳成绩的默认值
+    _bestScores = {
+      currentDifficulty: {
+        'time': currentTime,
+        'mistakes': currentMistakes,
       }
+    };
 
-      // 4. 在后台执行其他操作
-      // 保存最佳成绩
-      final isNewBest = await widget.saveBestScore(context);
-      if (!mounted) return;
+    // 2. 立即更新UI，显示完成页面，消除加载卡顿
+    if (mounted) {
+      setState(() {
+        _isLoading = false;
+      });
+    }
 
-      // 保存游戏统计
-      await widget.saveGameStatistics(context);
-      if (!mounted) return;
+    // 3. 在后台执行所有异步操作
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      try {
+        // 保存最佳成绩
+        final isNewBest = await widget.saveBestScore(context);
+        if (!mounted) return;
 
-      // 清除保存的游戏
-      await widget.clearSavedGame(context);
-      if (!mounted) return;
+        // 保存游戏统计
+        await widget.saveGameStatistics(context);
+        if (!mounted) return;
 
-      // 5. 如果是新纪录，显示对话框
-      if (isNewBest && !_hasShownDialog) {
-        _hasShownDialog = true;
-        if (mounted) {
-          await _showNewRecordDialogAsync();
-        }
-      }
+        // 清除保存的游戏
+        await widget.clearSavedGame(context);
+        if (!mounted) return;
 
-      // 6. 如果是新纪录，更新最佳成绩显示
-      if (isNewBest && mounted) {
+        // 加载最新的最佳成绩
         final updatedScores = await widget.loadBestScores(context);
+        if (!mounted) return;
+
+        // 更新最佳成绩显示
         if (mounted) {
           setState(() {
             _bestScores = updatedScores;
           });
         }
-      }
-    } catch (e) {
-      // 加载失败时，使用当前成绩作为最佳成绩
-      if (mounted) {
-        _bestScores = {
-          currentDifficulty: {
-            'time': currentTime,
-            'mistakes': currentMistakes,
+
+        // 如果是新纪录，显示对话框
+        if (isNewBest && !_hasShownDialog) {
+          _hasShownDialog = true;
+          if (mounted) {
+            await _showNewRecordDialogAsync();
           }
-        };
-        setState(() {
-          _isLoading = false;
-        });
+        }
+      } catch (e) {
+        // 后台操作失败时，保持当前显示的成绩
+        // 不需要额外处理，因为我们已经显示了完成页面
       }
-    }
+    });
   }
 
   @override
