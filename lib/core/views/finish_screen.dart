@@ -82,9 +82,15 @@ abstract class FinishScreenTemplate<T extends GameViewModel, S extends GameServi
   @protected
   Future<Map<String, dynamic>> loadBestScores(BuildContext context) async {
     try {
-      final scores = await gameService.getBestScores();
-      // 确保返回的是 Map<String, dynamic>
-      return Map<String, dynamic>.from(scores);
+      // 只加载当前难度的最佳成绩，而不是所有难度
+      final currentDifficulty = getCurrentDifficulty(context);
+      final score = await gameService.getBestScore(difficulty: currentDifficulty);
+      
+      // 如果找到成绩，返回包含当前难度的Map
+      if (score != null) {
+        return {currentDifficulty: score};
+      }
+      return {};
     } catch (e) {
       // 加载失败时返回空 Map
       return {};
@@ -225,61 +231,44 @@ class FinishScreenTemplateState<T extends GameViewModel, S extends GameService> 
     final currentDifficulty = widget.getCurrentDifficulty(context);
 
     try {
-      // 1. 加载历史最佳成绩
-      final loadedScores = await widget.loadBestScores(context);
+      // 1. 并行执行不相关的操作
+      final saveStatisticsFuture = widget.saveGameStatistics(context);
+      final clearGameFuture = widget.clearSavedGame(context);
+
+      // 2. 等待所有并行操作完成
+      await Future.wait([saveStatisticsFuture, clearGameFuture]);
+
       if (!mounted) return;
 
-      // 2. 获取当前难度的历史最佳成绩
-      final historyBestScore = loadedScores[currentDifficulty];
-      final historyBestTime = historyBestScore != null
-          ? widget.getBestScoreTimeValue(context, historyBestScore)
-          : null;
-      final historyBestMistakes = historyBestScore != null
-          ? widget.getBestScoreMistakes(context, historyBestScore)
-          : null;
+      // 3. 保存最佳成绩
+      final isNewBest = await widget.saveBestScore(context);
 
-      // 3. 判断是否是新纪录（首次游戏或成绩更好）
-      final isNewBest = historyBestScore == null ||
-          currentTime < (historyBestTime ?? currentTime) ||
-          (currentTime == historyBestTime && currentMistakes < (historyBestMistakes ?? currentMistakes));
+      if (!mounted) return;
 
-      // 4. 如果是新纪录，用当前成绩更新最佳成绩（不重新加载）
-      if (isNewBest) {
-        _bestScores = Map<String, dynamic>.from(loadedScores);
-        _bestScores[currentDifficulty] = {
+      // 4. 更新最佳成绩
+      final updatedScores = await widget.loadBestScores(context);
+      if (!mounted) return;
+
+      _bestScores = updatedScores.isNotEmpty ? updatedScores : {
+        currentDifficulty: {
           'time': currentTime,
           'mistakes': currentMistakes,
-        };
-      } else {
-        _bestScores = loadedScores;
+        }
+      };
+
+      // 5. 数据加载完成，显示完成页面
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
       }
 
-      // 5. 保存当前成绩到仓库
-      await widget.saveBestScore(context);
-
-      if (!mounted) return;
-      // 6. 保存游戏统计
-      await widget.saveGameStatistics(context);
-
-      if (!mounted) return;
-      // 7. 清除保存的游戏
-      await widget.clearSavedGame(context);
-
-      if (!mounted) return;
-
-      // 8. 如果是新纪录，先显示对话框，再显示完成页面
+      // 6. 显示新纪录对话框
       if (isNewBest && !_hasShownDialog) {
         _hasShownDialog = true;
         if (mounted) {
           await _showNewRecordDialogAsync();
         }
-      }
-
-      // 9. 数据加载完成，显示完成页面
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
       }
     } catch (e) {
       // 加载失败时，使用当前成绩作为最佳成绩
