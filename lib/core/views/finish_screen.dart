@@ -258,10 +258,15 @@ class FinishScreenTemplateState<T extends GameViewModel, S extends GameService> 
         final updatedScores = await widget.loadBestScores(context);
         if (!mounted) return;
 
-        // 更新最佳成绩显示
+        // 更新最佳成绩显示，但保持当前难度的成绩
         if (mounted) {
           setState(() {
-            _bestScores = updatedScores;
+            // 如果updatedScores中包含当前难度的成绩，使用它
+            // 否则，保持当前显示的成绩
+            if (updatedScores.containsKey(currentDifficulty)) {
+              _bestScores = updatedScores;
+            }
+            // 否则，保持当前显示的成绩不变
           });
         }
 
